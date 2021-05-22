@@ -1,0 +1,173 @@
+<?xml version="1.0"?>
+<block>
+  <name>altera_socfpga_sdr_source_complex</name>
+  <key>AlteraSocSDR_altera_socfpga_sdr_source_complex</key>
+  <category>AlteraSocSDR</category>
+  <flags>throttle</flags>
+  <import>import AlteraSocSDR</import>
+  <make> #if $type() == "complex"
+    AlteraSocSDR.altera_socfpga_sdr_source_complex($DeviceName,$Frequency, $SampleRate, $GainRF, $GainIF, $WordLength, $ScaleFactor,$ScaleConstant,$BufferLength,$type.size*1,$swap_iq)
+  #else
+    AlteraSocSDR.altera_socfpga_sdr_source_complex($DeviceName,$Frequency, $SampleRate, $GainRF, $GainIF, $WordLength, $ScaleFactor,$ScaleConstant,$BufferLength,$type.size*2,$swap_iq)
+  #end if 
+  </make>
+  <param>
+    <name>Dev Name</name>
+    <key>DeviceName</key>
+    <value>/dev/altera_msgdma_rd0</value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>Frequency</name>
+    <key>Frequency</key>
+    <value>100000000</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Sample Rate</name>
+    <key>SampleRate</key>
+    <value>1000000</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Gain RF</name>
+    <key>GainRF</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+    <param>
+    <name>Gain IF</name>
+    <key>GainIF</key>
+    <value>0</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Word Length</name>
+    <key>WordLength</key>
+    <value>16</value>
+    <type>int</type>
+    <option>
+      <name>10 bits</name>
+      <key>10</key>
+    </option>
+    <option>
+      <name>12 bits</name>
+      <key>12</key>
+    </option>
+    <option>
+      <name>14 bits</name>
+      <key>14</key>
+    </option>			     
+    <option>
+      <name>16 bits</name>
+      <key>16</key>
+    </option>
+  </param>
+  <param>
+    <name>Scale Factor</name>
+    <key>ScaleFactor</key>
+    <value>False</value>
+    <type>bool</type>
+      <option>	
+       <name>Yes</name>
+       <key>True</key>
+      </option>
+      <option>
+       <name>No</name>
+       <key>False</key>
+      </option>
+  </param>
+  <param>
+    <name>Scale Constant</name>
+    <key>ScaleConstant</key>
+    <value>8192</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Buffer Length</name>
+    <key>BufferLength</key>
+    <value>1048576</value>
+    <type>int</type>
+    <option>
+      <name>1MB</name>
+      <key>1048576</key>
+    </option>
+    <option>
+      <name>2MB</name>
+      <key>2097152</key>
+    </option>
+    <option>
+      <name>4MB</name>
+      <key>4194304</key>
+    </option>			     
+    <option>
+      <name>8MB</name>
+      <key>8388608</key>
+    </option>
+    <option>
+      <name>16MB</name>
+      <key>16777216</key>
+    </option>
+    <option>
+      <name>32MB</name>
+      <key>33554432</key>
+    </option>
+    <option>
+      <name>64MB</name>
+      <key>67108864</key>
+    </option>
+    <option>
+      <name>128MB</name>
+      <key>134217728</key>
+    </option>
+    <option>
+      <name>256MB</name>
+      <key>268435456</key>
+    </option>
+    <option>
+      <name>512MB</name>
+      <key>536870912</key>
+    </option>			     
+    <option>
+      <name>1024MB</name>
+      <key>1073741824</key>
+    </option>
+    <option>
+      <name>2048MB</name>
+      <key>2147483648</key>
+    </option>
+  </param>
+  <param>
+    <name>Data Format</name>
+    <key>type</key>
+    <type>enum</type>
+    <option>
+	<name>Complex</name>
+	<key>complex</key>
+	<opt>size:gr.sizeof_gr_complex</opt>
+    </option>
+    <option>
+	<name>Complex Short</name>
+	<key>sc16</key>
+	<opt>size:gr.sizeof_short*2</opt>
+     </option>
+  </param>
+  <param>
+    <name>Swap IQ</name>
+    <key>swap_iq</key>
+    <value>False</value>
+    <type>bool</type>
+      <option>	
+       <name>Yes</name>
+       <key>True</key>
+      </option>
+      <option>
+       <name>No</name>
+       <key>False</key>
+      </option>
+  </param>
+  <source>
+    <name>out</name>
+    <type>$type</type>
+  </source>
+</block>

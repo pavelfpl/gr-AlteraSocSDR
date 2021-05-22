@@ -1,0 +1,123 @@
+<?xml version="1.0"?>
+<block>
+  <name>altera_socfpga_fir_accelerator</name>
+  <key>AlteraSocSDR_altera_socfpga_fir_accelerator</key>
+  <category>AlteraSocSDR</category>
+  <import>import AlteraSocSDR</import>
+  <make>  #if $TypeInput() == "complex" and $TypeOutput() == "complex"
+      AlteraSocSDR.altera_socfpga_fir_accelerator($DeviceInputName,$DeviceOutputName,$WordLength,$ScaleInputFactor,$ScaleOutputFactor,$ScaleConstant,$TypeInput.size*1,$TypeOutput.size*1)
+  #else if $TypeInput() == "complex" and $TypeOutput() == "sc16"
+      AlteraSocSDR.altera_socfpga_fir_accelerator($DeviceInputName,$DeviceOutputName,$WordLength,$ScaleInputFactor,$ScaleOutputFactor,$ScaleConstant,$TypeInput.size*1,$TypeOutput.size*2)
+  #else if $TypeInput() == "sc16" and $TypeOutput() == "complex"
+      AlteraSocSDR.altera_socfpga_fir_accelerator($DeviceInputName,$DeviceOutputName,$WordLength,$ScaleInputFactor,$ScaleOutputFactor,$ScaleConstant,$TypeInput.size*2,$TypeOutput.size*1)
+  #else
+      AlteraSocSDR.altera_socfpga_fir_accelerator($DeviceInputName,$DeviceOutputName,$WordLength,$ScaleInputFactor,$ScaleOutputFactor,$ScaleConstant,$TypeInput.size*2,$TypeOutput.size*2)
+  #end if 
+  </make>
+  <param>
+    <name>Input Dev Name (WR_ONLY)</name>
+    <key>DeviceInputName</key>
+    <value>/dev/altera_msgdma_wr0</value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>Output Dev Name (RD_ONLY)</name>
+    <key>DeviceOutputName</key>
+    <value>/dev/altera_msgdma_rd0</value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>Word Length</name>
+    <key>WordLength</key>
+    <value>16</value>
+    <type>int</type>
+    <option>
+      <name>10 bits</name>
+      <key>10</key>
+    </option>
+    <option>
+      <name>12 bits</name>
+      <key>12</key>
+    </option>
+    <option>
+      <name>14 bits</name>
+      <key>14</key>
+    </option>			     
+    <option>
+      <name>16 bits</name>
+      <key>16</key>
+    </option>
+  </param>
+  <param>
+    <name>Scale Input Factor</name>
+    <key>ScaleInputFactor</key>
+    <value>False</value>
+    <type>bool</type>
+      <option>	
+       <name>Yes</name>
+       <key>True</key>
+      </option>
+      <option>
+       <name>No</name>
+       <key>False</key>
+      </option>
+  </param>
+  <param>
+    <name>Scale Output Factor</name>
+    <key>ScaleOutputFactor</key>
+    <value>False</value>
+    <type>bool</type>
+      <option>	
+       <name>Yes</name>
+       <key>True</key>
+      </option>
+      <option>
+       <name>No</name>
+       <key>False</key>
+      </option>
+  </param>
+  <param>
+    <name>Scale Constant</name>
+    <key>ScaleConstant</key>
+    <value>8192</value>
+    <type>int</type>
+  </param>
+  <param>
+    <name>Data Input Format</name>
+    <key>TypeInput</key>
+    <type>enum</type>
+    <option>
+	<name>Complex</name>
+	<key>complex</key>
+	<opt>size:gr.sizeof_gr_complex</opt>
+    </option>
+    <option>
+	<name>Complex Short</name>
+	<key>sc16</key>
+	<opt>size:gr.sizeof_short</opt>
+     </option>
+  </param> 
+  <param>
+    <name>Data Output Format</name>
+    <key>TypeOutput</key>
+    <type>enum</type>
+    <option>
+	<name>Complex</name>
+	<key>complex</key>
+	<opt>size:gr.sizeof_gr_complex</opt>
+    </option>
+    <option>
+	<name>Complex Short</name>
+	<key>sc16</key>
+	<opt>size:gr.sizeof_short*2</opt>
+     </option>
+  </param> 
+  <sink>
+	<name>in</name>
+	<type>$TypeInput</type>
+  </sink>
+  <source>
+	<name>out</name>
+	<type>$TypeOutput</type>
+  </source>
+</block>
