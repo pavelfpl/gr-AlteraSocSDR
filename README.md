@@ -73,3 +73,34 @@ fi
 export LD_LIBRARY_PATH=$GNURADIO_PATH/lib:$LD_LIBRARY_CONFIG
 export PKG_CONFIG_PATH=$GNURADIO_PATH/lib/pkgconfig:$PKG_CONFIG_PATH
 ```
+## 1] GNU Radio MSGDMA sink/source 
+> `altera_socfpga_sdr_sink_complex` and `altera_socfpga_sdr_source_complex`
+
+- `Device Name` - name of MSGDMA Linux Device (e.g. `/dev/dev/altera_msgdma_wr0` or `/dev/altera_msgdma_rd0`)
+- `Frequency` - center frequency (for future use only!)
+- `Sample Rate` - sample rate 
+- `Gain RF,IF` - RF/IF gain (for future use only!)
+- `Word Length` - input or output WORD length (default is 16 bits)
+- `Scale Factor` - scale factor (YES/NO)
+- `Scale Constant` - scale CONSTANT for previous SCALE factor option (sink - multiplication / source - division)
+- `Buffer Length` - circular buffer length 
+- `Data Format` - complex FLOAT or complex SHORT
+- `Swap IQ` - swap IQ parts
+- `Gain Correction` - fine scale correction (sink only)
+
+![Source_sink](https://github.com/pavelfpl/gr-AlteraSocSDR/blob/master/source_sink_socfpga.png)
+
+## 2] GNU Radio MSGDMA FIR accelerators (FIR, FIR decimation and FIR interpolation) 
+> `altera_socfpga_fir_accelerator` , `altera_socfpga_fir_decim_accelerator` and `altera_socfpga_fir_interp_accelerator_impl`
+
+- `Input Dev Name (WR only)` - name of MSGDMA Linux Device in write mode (e.g. `/dev/dev/altera_msgdma_wr0`)
+- `Output Dev Name (RD only)` - name of MSGDMA Linux Device in read mode (e.g. `/dev/dev/altera_msgdma_rd0`)
+- `Word Length` - input and output WORD length (default is 16 bits)
+- `Scale Input Factor` - scale input factor (YES/NO)
+- `Scale Output Factor` - scale output factor (YES/NO)
+- `Scale Constant` - scale CONSTANT for previous SCALE factor options
+- `Decimation` - decimation factor (1,2,4,8,...)
+- `Interpolation` - interpolation factor (1,2,4,8,...)
+
+![FIR](https://github.com/pavelfpl/gr-AlteraSocSDR/blob/master/fir_accelerators.png)
+
