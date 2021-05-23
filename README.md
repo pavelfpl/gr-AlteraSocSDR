@@ -35,9 +35,10 @@ sudo ldconfig
 ```
 sudo apt install python-cheetah python-lxml python-thrift python-sphinx doxygen python2.7-numpy python-numpy libclalsadrv-dev libgsl-dev libzmq5 libfftw3-dev
 pkg-config libcppunit-dev swig liblog4cpp5v5 liblog4cpp5-dev liborc-0.4-dev python-mako python-bitarray libboost-all-dev build-essential cmake
-sudo aptitude installtexlive-latex-base texlive-latex-recommended ghostscript - Latex Support - documentation 
-sudo aptitude install nfs-common - NFS compilation
-# sudo aptitude install libvolk1-dev libvolk1.3 libvolk1-bin - older Gnuradio 3.7.11
+
+sudo apt installtexlive-latex-base texlive-latex-recommended ghostscript - Latex Support - documentation 
+sudo apt install nfs-common - NFS compilation
+# sudo apt install libvolk1-dev libvolk1.3 libvolk1-bin - older Gnuradio 3.7.11
 
 git clone https://github.com/gnuradio/gnuradio.git
 git checkout maint-3.7 [or selected version: git checkout v3.7.13.4]
