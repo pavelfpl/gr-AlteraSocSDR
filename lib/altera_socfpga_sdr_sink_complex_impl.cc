@@ -105,10 +105,13 @@ namespace gr {
       // -------------------------------------------------------
       switch(m_WordLength){
         case 10: m_MSB_MASK = 0x03; break;
+        case 11: m_MSB_MASK = 0x07; break;
         case 12: m_MSB_MASK = 0x0F; break;
+        case 13: m_MSB_MASK = 0x1F; break;
         case 14: m_MSB_MASK = 0x3F; break;
+        case 15: m_MSB_MASK = 0x7F; break;
         case 16: m_MSB_MASK = 0xFF; break;
-        default: m_MSB_MASK = 0x3F; break;
+        default: m_MSB_MASK = 0x3F; break; 
       }
 
       // Set QUANTIZATION parameters ...
@@ -330,7 +333,7 @@ namespace gr {
         if(m_exit_requested) break;               // shared global variable - exit requested if m_exit_requested == TRUE --> break ...  
         
 	// Calculate sample flow ...
-        // -------------------------
+    // -------------------------
        
 	/*
         m_total_samples += (niutput_items_real);

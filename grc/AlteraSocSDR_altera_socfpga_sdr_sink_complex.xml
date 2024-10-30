@@ -51,13 +51,25 @@
       <key>10</key>
     </option>
     <option>
+      <name>11 bits</name>
+      <key>11</key>
+    </option>
+    <option>
       <name>12 bits</name>
       <key>12</key>
     </option>
     <option>
+      <name>13 bits</name>
+      <key>13</key>
+    </option>
+    <option>
       <name>14 bits</name>
       <key>14</key>
-    </option>			     
+    </option>
+    <option>
+      <name>15 bits</name>
+      <key>15</key>
+    </option>
     <option>
       <name>16 bits</name>
       <key>16</key>
