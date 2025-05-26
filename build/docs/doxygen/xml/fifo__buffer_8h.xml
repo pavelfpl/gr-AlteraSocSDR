@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="fifo__buffer_8h" kind="file" language="C++">
+    <compoundname>fifo_buffer.h</compoundname>
+    <includes local="no">sys/types.h</includes>
+    <includes local="no">iostream</includes>
+    <includes local="no">gnuradio/gr_complex.h</includes>
+    <includes local="no">gnuradio/thread/thread.h</includes>
+    <includes refid="gr__storage_8h" local="no">AlteraSocSDR/gr_storage.h</includes>
+    <includedby refid="altera__socfpga__sdr__sink__complex__impl_8h" local="yes">altera_socfpga_sdr_sink_complex_impl.h</includedby>
+    <includedby refid="altera__socfpga__sdr__source__complex__impl_8h" local="yes">altera_socfpga_sdr_source_complex_impl.h</includedby>
+    <incdepgraph>
+      <node id="94">
+        <label>AlteraSocSDR/gr_storage.h</label>
+        <link refid="gr__storage_8h"/>
+      </node>
+      <node id="89">
+        <label>fifo_buffer.h</label>
+        <link refid="fifo__buffer_8h"/>
+        <childnode refid="90" relation="include">
+        </childnode>
+        <childnode refid="91" relation="include">
+        </childnode>
+        <childnode refid="92" relation="include">
+        </childnode>
+        <childnode refid="93" relation="include">
+        </childnode>
+        <childnode refid="94" relation="include">
+        </childnode>
+      </node>
+      <node id="93">
+        <label>gnuradio/thread/thread.h</label>
+      </node>
+      <node id="90">
+        <label>sys/types.h</label>
+      </node>
+      <node id="92">
+        <label>gnuradio/gr_complex.h</label>
+      </node>
+      <node id="91">
+        <label>iostream</label>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="96">
+        <label>altera_socfpga_sdr_sink_complex_impl.h</label>
+        <link refid="altera__socfpga__sdr__sink__complex__impl_8h"/>
+      </node>
+      <node id="95">
+        <label>fifo_buffer.h</label>
+        <link refid="fifo__buffer_8h"/>
+        <childnode refid="96" relation="include">
+        </childnode>
+        <childnode refid="97" relation="include">
+        </childnode>
+      </node>
+      <node id="97">
+        <label>altera_socfpga_sdr_source_complex_impl.h</label>
+        <link refid="altera__socfpga__sdr__source__complex__impl_8h"/>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="structfifo__t" prot="public">fifo_t</innerclass>
+    <innerclass refid="classfifo__buffer" prot="public">fifo_buffer</innerclass>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="fifo__buffer_8h_1a4e59c958d86e8b54bd3db77843b43cbc" prot="public" static="no">
+        <name>CONST_BUFFER_UINT_8</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="17" column="9" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fifo__buffer_8h_1a08ffa0145dfe10ae3059c846e958128b" prot="public" static="no">
+        <name>CONST_BUFFER_COMPLEX</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="18" column="9" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" bodystart="18" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="fifo__buffer_8h_1a238925c4129c4c019f55e712012efa9a" prot="public" static="no">
+        <name>CONST_BUFFER_GR_STORAGE</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="19" column="9" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h"/>
+  </compounddef>
+</doxygen>

@@ -1,0 +1,146 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="altera__msgdma__ioctl_8h" kind="file" language="C++">
+    <compoundname>altera_msgdma_ioctl.h</compoundname>
+    <includes local="no">sys/ioctl.h</includes>
+    <incdepgraph>
+      <node id="1">
+        <label>sys/ioctl.h</label>
+      </node>
+      <node id="0">
+        <label>altera_msgdma_ioctl.h</label>
+        <link refid="altera__msgdma__ioctl_8h"/>
+        <childnode refid="1" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="altera__msgdma__ioctl_8h_1a0adfb47262a0b102cfa887ae8d206abb" prot="public" static="no">
+        <name>ALTERA_MSGDMA_MAGIC</name>
+        <initializer>0xEE</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" line="12" column="9" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" bodystart="12" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="altera__msgdma__ioctl_8h_1af6d8d079387b6aaad56688343ba6dce8" prot="public" static="no">
+        <name>ALTERA_MSGDMA_BUFFER_SIZE</name>
+        <initializer>0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" line="13" column="9" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="altera__msgdma__ioctl_8h_1a63a0ce5d10194b309e1de41b211f86d7" prot="public" static="no">
+        <name>ALTERA_MSGDMA_MIN_BLOCK_SIZE</name>
+        <initializer>1</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" line="14" column="9" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="altera__msgdma__ioctl_8h_1a96ea54e59916226d44c495335af74f3b" prot="public" static="no">
+        <name>ALTERA_MSGDMA_STOP</name>
+        <initializer>2</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" line="15" column="9" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="altera__msgdma__ioctl_8h_1a5fab489659b15fa0323f5c72ce270f9c" prot="public" static="no">
+        <name>ALTERA_MSGDMA_RESET</name>
+        <initializer>3</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" line="16" column="9" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="altera__msgdma__ioctl_8h_1ab0684bd18514ba6b60d2d99806dab551" prot="public" static="no">
+        <name>ALTERA_MSGDMA_STOP_RESET</name>
+        <initializer>4</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" line="17" column="9" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" bodystart="17" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="altera__msgdma__ioctl_8h_1ae11c9e2362b349a9f9471a5a40e57cb0" prot="public" static="no">
+        <name>IO_ALTERA_MSGDMA_SET_BUFFER_SIZE</name>
+        <initializer>_IOW(<ref refid="altera__msgdma__ioctl_8h_1a0adfb47262a0b102cfa887ae8d206abb" kindref="member">ALTERA_MSGDMA_MAGIC</ref>, <ref refid="altera__msgdma__ioctl_8h_1af6d8d079387b6aaad56688343ba6dce8" kindref="member">ALTERA_MSGDMA_BUFFER_SIZE</ref>, unsigned long) /* IO_ALTERA_MSGDMA_SET_BUFFER_SIZE  - _IOW */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" line="19" column="9" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" bodystart="19" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="altera__msgdma__ioctl_8h_1af397a3b37a02f90995e1fbe4234af617" prot="public" static="no">
+        <name>IO_ALTERA_MSGDMA_SET_MIN_BLOCK_SIZE</name>
+        <initializer>_IOW(<ref refid="altera__msgdma__ioctl_8h_1a0adfb47262a0b102cfa887ae8d206abb" kindref="member">ALTERA_MSGDMA_MAGIC</ref>, <ref refid="altera__msgdma__ioctl_8h_1a63a0ce5d10194b309e1de41b211f86d7" kindref="member">ALTERA_MSGDMA_MIN_BLOCK_SIZE</ref>, unsigned long) /* IO_ALTERA_MSGDMA_SET_MIN_BLOCK_SIZE - _IOW */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" line="20" column="9" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="altera__msgdma__ioctl_8h_1a61beb2f760e589005b51f147d1c568da" prot="public" static="no">
+        <name>IO_ALTERA_MSGDMA_STOP</name>
+        <initializer>_IO(<ref refid="altera__msgdma__ioctl_8h_1a0adfb47262a0b102cfa887ae8d206abb" kindref="member">ALTERA_MSGDMA_MAGIC</ref>,<ref refid="altera__msgdma__ioctl_8h_1a96ea54e59916226d44c495335af74f3b" kindref="member">ALTERA_MSGDMA_STOP</ref>) /* IO_ALTERA_MSGDMA_STOP - _IO */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" line="21" column="9" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="altera__msgdma__ioctl_8h_1ae564948515bc04d41df75ea1d0831292" prot="public" static="no">
+        <name>IO_ALTERA_MSGDMA_RESET</name>
+        <initializer>_IO(<ref refid="altera__msgdma__ioctl_8h_1a0adfb47262a0b102cfa887ae8d206abb" kindref="member">ALTERA_MSGDMA_MAGIC</ref>,<ref refid="altera__msgdma__ioctl_8h_1a5fab489659b15fa0323f5c72ce270f9c" kindref="member">ALTERA_MSGDMA_RESET</ref>) /* IO_ALTERA_MSGDMA_RESET - _IO */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" line="22" column="9" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="define" id="altera__msgdma__ioctl_8h_1ab5cf00e0c14c9a83dc138d353231e4be" prot="public" static="no">
+        <name>IO_ALTERA_MSGDMA_STOP_RESET</name>
+        <initializer>_IO(<ref refid="altera__msgdma__ioctl_8h_1a0adfb47262a0b102cfa887ae8d206abb" kindref="member">ALTERA_MSGDMA_MAGIC</ref>,<ref refid="altera__msgdma__ioctl_8h_1ab0684bd18514ba6b60d2d99806dab551" kindref="member">ALTERA_MSGDMA_STOP_RESET</ref>) /* IO_ALTERA_MSGDMA_STOP_RESET - _IO */</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" line="23" column="9" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_msgdma_ioctl.h"/>
+  </compounddef>
+</doxygen>

@@ -6,9 +6,9 @@
   <flags>throttle</flags>
   <import>import AlteraSocSDR</import>
   <make>  #if $type() == "complex"
-    AlteraSocSDR.altera_socfpga_sdr_sink_complex($DeviceName,$Frequency, $SampleRate, $GainRF, $GainIF, $WordLength, $ScaleFactor,$ScaleConstant,$BufferLength,$type.size*1,$swap_iq,$gainCorrection)
+    AlteraSocSDR.altera_socfpga_sdr_sink_complex($DeviceName,$Frequency, $SampleRate, $AnalogBw, $DigitalBw, $TxGain, $WordLength, $ScaleFactor,$ScaleConstant,$BufferLength,$type.size*1,$swap_iq,$gainCorrection)
    #else
-    AlteraSocSDR.altera_socfpga_sdr_sink_complex($DeviceName,$Frequency, $SampleRate, $GainRF, $GainIF, $WordLength, $ScaleFactor,$ScaleConstant,$BufferLength,$type.size*2,$swap_iq,$gainCorrection)
+    AlteraSocSDR.altera_socfpga_sdr_sink_complex($DeviceName,$Frequency, $SampleRate, $AnalogBw, $DigitalBw, $TxGain, $WordLength, $ScaleFactor,$ScaleConstant,$BufferLength,$type.size*2,$swap_iq,$gainCorrection)
    #end if 
   </make>
   <param>
@@ -26,19 +26,25 @@
   <param>
     <name>Sample Rate</name>
     <key>SampleRate</key>
-    <value>1000000</value>
+    <value>400000</value>
     <type>real</type>
   </param>
   <param>
-    <name>Gain RF</name>
-    <key>GainRF</key>
-    <value>0</value>
+    <name>Analog BW</name>
+    <key>AnalogBw</key>
+    <value>200</value>
     <type>int</type>
   </param>
-    <param>
-    <name>Gain IF</name>
-    <key>GainIF</key>
-    <value>0</value>
+  <param>
+    <name>Digital BW</name>
+    <key>DigitalBw</key>
+    <value>0_5</value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>TX Gain</name>
+    <key>TxGain</key>
+    <value>16</value>
     <type>int</type>
   </param>
   <param>

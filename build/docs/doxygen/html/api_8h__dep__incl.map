@@ -1,0 +1,12 @@
+<map id="api.h" name="api.h">
+<area shape="rect" id="node2" href="$altera__socfpga__fir__accelerator_8h.html" title="altera_socfpga_fir\l_accelerator.h" alt="" coords="25,80,150,121"/>
+<area shape="rect" id="node4" href="$altera__socfpga__fir__decim__accelerator_8h.html" title="altera_socfpga_fir\l_decim_accelerator.h" alt="" coords="183,80,330,121"/>
+<area shape="rect" id="node6" href="$altera__socfpga__fir__interp__accelerator_8h.html" title="altera_socfpga_fir\l_interp_accelerator.h" alt="" coords="360,80,503,121"/>
+<area shape="rect" id="node8" href="$altera__socfpga__sdr__sink__complex_8h.html" title="altera_socfpga_sdr\l_sink_complex.h" alt="" coords="528,80,660,121"/>
+<area shape="rect" id="node10" href="$altera__socfpga__sdr__source__complex_8h.html" title="altera_socfpga_sdr\l_source_complex.h" alt="" coords="697,80,832,121"/>
+<area shape="rect" id="node3" href="$altera__socfpga__fir__accelerator__impl_8h.html" title="altera_socfpga_fir\l_accelerator_impl.h" alt="" coords="5,177,140,218"/>
+<area shape="rect" id="node5" href="$altera__socfpga__fir__decim__accelerator__impl_8h.html" title="altera_socfpga_fir\l_decim_accelerator_impl.h" alt="" coords="164,177,341,218"/>
+<area shape="rect" id="node7" href="$altera__socfpga__fir__interp__accelerator__impl_8h.html" title="altera_socfpga_fir\l_interp_accelerator\l_impl.h" alt="" coords="365,169,497,225"/>
+<area shape="rect" id="node9" href="$altera__socfpga__sdr__sink__complex__impl_8h.html" title="altera_socfpga_sdr\l_sink_complex_impl.h" alt="" coords="521,177,672,218"/>
+<area shape="rect" id="node11" href="$altera__socfpga__sdr__source__complex__impl_8h.html" title="altera_socfpga_sdr\l_source_complex_impl.h" alt="" coords="696,177,863,218"/>
+</map>

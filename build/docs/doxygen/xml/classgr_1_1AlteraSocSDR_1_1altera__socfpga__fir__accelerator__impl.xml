@@ -1,0 +1,451 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl" kind="class" language="C++" prot="public">
+    <compoundname>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</compoundname>
+    <basecompoundref refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator" prot="public" virt="non-virtual">gr::AlteraSocSDR::altera_socfpga_fir_accelerator</basecompoundref>
+    <includes refid="altera__socfpga__fir__accelerator__impl_8h" local="no">altera_socfpga_fir_accelerator_impl.h</includes>
+      <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a5b9b6833a672612388ca03d5b842d95c" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::fd_0</definition>
+        <argsstring></argsstring>
+        <name>fd_0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="49" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="49" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a5a35fa5f9a38ac9b1e2495866aecfe02" prot="private" static="yes" mutable="no">
+        <type>int</type>
+        <definition>int gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::fd_1</definition>
+        <argsstring></argsstring>
+        <name>fd_1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="50" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="50" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a3bb5ba5b421732b09bd0337d03d7c403" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::m_DeviceInputName</definition>
+        <argsstring></argsstring>
+        <name>m_DeviceInputName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="52" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1ae7bdd3c8d9c3fa2e152036fa176051ba" prot="private" static="no" mutable="no">
+        <type>std::string</type>
+        <definition>std::string gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::m_DeviceOutputName</definition>
+        <argsstring></argsstring>
+        <name>m_DeviceOutputName</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="52" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="52" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a384d921f1024082514a094f4d0ff9342" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::m_WordLength</definition>
+        <argsstring></argsstring>
+        <name>m_WordLength</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="53" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="53" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a13a4b53eef800de014c9b3d43ee84504" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::m_ScaleInputFactor</definition>
+        <argsstring></argsstring>
+        <name>m_ScaleInputFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="54" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a06846b69b7bc6cbccfa7fba5af1b241c" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::m_ScaleOutputFactor</definition>
+        <argsstring></argsstring>
+        <name>m_ScaleOutputFactor</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="54" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="54" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a1696b549da1605fb8178a685c4b9347d" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::m_itemsizeInput</definition>
+        <argsstring></argsstring>
+        <name>m_itemsizeInput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="55" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a2bee2f67bf831e48bde48f1745b4bccf" prot="private" static="no" mutable="no">
+        <type>size_t</type>
+        <definition>size_t gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::m_itemsizeOutput</definition>
+        <argsstring></argsstring>
+        <name>m_itemsizeOutput</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="55" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="55" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a8b0f4ad22370d7849d80d370b0dcae58" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::m_QUANTIZATION_ONE</definition>
+        <argsstring></argsstring>
+        <name>m_QUANTIZATION_ONE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="57" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="57" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1ac1e29a52876c12ebbd7b800d294d7bd9" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::m_TWO_QUANTIZATION_ONE</definition>
+        <argsstring></argsstring>
+        <name>m_TWO_QUANTIZATION_ONE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="58" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="58" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a8c636347e4da9e886c6051189f86ab41" prot="private" static="no" mutable="no">
+        <type>unsigned int</type>
+        <definition>unsigned int gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::m_QUANTIZATION_ONE_MASK</definition>
+        <argsstring></argsstring>
+        <name>m_QUANTIZATION_ONE_MASK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="59" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="59" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1ab77810bbd15bb9dd9c4cd576edb9a61e" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::m_MSB_MASK</definition>
+        <argsstring></argsstring>
+        <name>m_MSB_MASK</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="60" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="60" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a5e02059e40e093f4319a242ebfe38589" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::m_ScaleConstant</definition>
+        <argsstring></argsstring>
+        <name>m_ScaleConstant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="61" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="61" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a2f73040975ccf28012d6ae4857739dc5" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::m_msgdmaStatus</definition>
+        <argsstring></argsstring>
+        <name>m_msgdmaStatus</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="62" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="62" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a0867c0cbd76637dc9f3d26992fe6601b" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::buffer_write[CONST_ARRAY_SIZE]</definition>
+        <argsstring>[CONST_ARRAY_SIZE]</argsstring>
+        <name>buffer_write</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="64" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="64" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a0299d522d08a54ded76d1b2975265080" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::buffer_read[CONST_ARRAY_SIZE]</definition>
+        <argsstring>[CONST_ARRAY_SIZE]</argsstring>
+        <name>buffer_read</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="65" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="65" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a4c73f03c815f9ebdeedff5d37020c03e" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::msgdmaInit</definition>
+        <argsstring>()</argsstring>
+        <name>msgdmaInit</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="67" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a4b8ad210c4458dc2c902a772ca52910c" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::resetFIRFilter</definition>
+        <argsstring>()</argsstring>
+        <name>resetFIRFilter</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="68" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a69d530c75853a99696705211ab65fcc3" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::altera_socfpga_fir_accelerator_impl</definition>
+        <argsstring>(const std::string &amp;DeviceInputName, const std::string &amp;DeviceOutputName, unsigned int WordLength, bool ScaleInputFactor, bool ScaleOutputFactor, int ScaleConstant, size_t itemsizeInput, size_t itemsizeOutput)</argsstring>
+        <name>altera_socfpga_fir_accelerator_impl</name>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>DeviceInputName</declname>
+        </param>
+        <param>
+          <type>const std::string &amp;</type>
+          <declname>DeviceOutputName</declname>
+        </param>
+        <param>
+          <type>unsigned int</type>
+          <declname>WordLength</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ScaleInputFactor</declname>
+        </param>
+        <param>
+          <type>bool</type>
+          <declname>ScaleOutputFactor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>ScaleConstant</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>itemsizeInput</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>itemsizeOutput</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="70" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a695f4f7dddd4fa96b29d1d5129ca4e83" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::~altera_socfpga_fir_accelerator_impl</definition>
+        <argsstring>()</argsstring>
+        <name>~altera_socfpga_fir_accelerator_impl</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1afe8924ff89a426d0f9b6c469080d45bd" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>bool</type>
+        <definition>bool gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::stop</definition>
+        <argsstring>()</argsstring>
+        <name>stop</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1acbf77d7ac016d5889fbc053db686886b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::forecast</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items_required)</argsstring>
+        <name>forecast</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items_required</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="76" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a2144a9a0ab3d946806f88858e6de29a9" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>int</type>
+        <definition>int gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl::general_work</definition>
+        <argsstring>(int noutput_items, gr_vector_int &amp;ninput_items, gr_vector_const_void_star &amp;input_items, gr_vector_void_star &amp;output_items)</argsstring>
+        <name>general_work</name>
+        <param>
+          <type>int</type>
+          <declname>noutput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_int &amp;</type>
+          <declname>ninput_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_const_void_star &amp;</type>
+          <declname>input_items</declname>
+        </param>
+        <param>
+          <type>gr_vector_void_star &amp;</type>
+          <declname>output_items</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="78" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="6">
+        <label>gr::AlteraSocSDR::altera_socfpga_fir_accelerator</label>
+        <link refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator"/>
+        <childnode refid="7" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</label>
+        <link refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl"/>
+        <childnode refid="6" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>gr::block</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="9">
+        <label>gr::AlteraSocSDR::altera_socfpga_fir_accelerator</label>
+        <link refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator"/>
+        <childnode refid="10" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</label>
+        <link refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl"/>
+        <childnode refid="9" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="10">
+        <label>gr::block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" line="47" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/altera_socfpga_fir_accelerator_impl.h" bodystart="46" bodyend="82"/>
+    <listofallmembers>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a69d530c75853a99696705211ab65fcc3" prot="public" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>altera_socfpga_fir_accelerator_impl</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a0299d522d08a54ded76d1b2975265080" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>buffer_read</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a0867c0cbd76637dc9f3d26992fe6601b" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>buffer_write</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a5b9b6833a672612388ca03d5b842d95c" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>fd_0</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a5a35fa5f9a38ac9b1e2495866aecfe02" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>fd_1</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1acbf77d7ac016d5889fbc053db686886b" prot="public" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>forecast</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a2144a9a0ab3d946806f88858e6de29a9" prot="public" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>general_work</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a3bb5ba5b421732b09bd0337d03d7c403" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>m_DeviceInputName</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1ae7bdd3c8d9c3fa2e152036fa176051ba" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>m_DeviceOutputName</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a1696b549da1605fb8178a685c4b9347d" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>m_itemsizeInput</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a2bee2f67bf831e48bde48f1745b4bccf" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>m_itemsizeOutput</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1ab77810bbd15bb9dd9c4cd576edb9a61e" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>m_MSB_MASK</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a2f73040975ccf28012d6ae4857739dc5" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>m_msgdmaStatus</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a8b0f4ad22370d7849d80d370b0dcae58" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>m_QUANTIZATION_ONE</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a8c636347e4da9e886c6051189f86ab41" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>m_QUANTIZATION_ONE_MASK</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a5e02059e40e093f4319a242ebfe38589" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>m_ScaleConstant</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a13a4b53eef800de014c9b3d43ee84504" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>m_ScaleInputFactor</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a06846b69b7bc6cbccfa7fba5af1b241c" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>m_ScaleOutputFactor</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1ac1e29a52876c12ebbd7b800d294d7bd9" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>m_TWO_QUANTIZATION_ONE</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a384d921f1024082514a094f4d0ff9342" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>m_WordLength</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator_1ac87b4ce2f6fc6417201841b45f0f420e" prot="public" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>make</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a4c73f03c815f9ebdeedff5d37020c03e" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>msgdmaInit</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a4b8ad210c4458dc2c902a772ca52910c" prot="private" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>resetFIRFilter</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator_1a99cc3a78a2b53185cfb319ac137aa138" prot="public" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>sptr</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1afe8924ff89a426d0f9b6c469080d45bd" prot="public" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>stop</name></member>
+      <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a695f4f7dddd4fa96b29d1d5129ca4e83" prot="public" virt="non-virtual"><scope>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</scope><name>~altera_socfpga_fir_accelerator_impl</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

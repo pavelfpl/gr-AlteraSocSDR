@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir">
+    <compoundname>lib</compoundname>
+    <innerfile refid="altera__msgdma__ioctl_8h">altera_msgdma_ioctl.h</innerfile>
+    <innerfile refid="altera__socfpga__fir__accelerator__impl_8h">altera_socfpga_fir_accelerator_impl.h</innerfile>
+    <innerfile refid="altera__socfpga__fir__decim__accelerator__impl_8h">altera_socfpga_fir_decim_accelerator_impl.h</innerfile>
+    <innerfile refid="altera__socfpga__fir__interp__accelerator__impl_8h">altera_socfpga_fir_interp_accelerator_impl.h</innerfile>
+    <innerfile refid="altera__socfpga__sdr__sink__complex__impl_8h">altera_socfpga_sdr_sink_complex_impl.h</innerfile>
+    <innerfile refid="altera__socfpga__sdr__source__complex__impl_8h">altera_socfpga_sdr_source_complex_impl.h</innerfile>
+    <innerfile refid="fifo__buffer_8h">fifo_buffer.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/"/>
+  </compounddef>
+</doxygen>

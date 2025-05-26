@@ -117,6 +117,11 @@ if(NOT CPPUNIT_FOUND)
     message(FATAL_ERROR "CppUnit required to compile AlteraSocSDR")
 endif()
 
+find_package(AT86RF215_Suite)
+if(NOT AT86RF215_FOUND)
+   message(FATAL_ERROR "AT86RF215S_Suite required to compile AT86RF215 library")
+endif()
+
 ########################################################################
 # Setup doxygen option
 ########################################################################

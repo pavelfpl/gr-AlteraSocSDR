@@ -1,0 +1,440 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classfifo__buffer" kind="class" language="C++" prot="public">
+    <compoundname>fifo_buffer</compoundname>
+    <includes refid="fifo__buffer_8h" local="no">fifo_buffer.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classfifo__buffer_1ae29e5b43961668ff2443385306964069" prot="private" static="no" mutable="no">
+        <type>boost::mutex</type>
+        <definition>boost::mutex fifo_buffer::fp_mutex</definition>
+        <argsstring></argsstring>
+        <name>fp_mutex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="94" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" bodystart="94" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfifo__buffer_1a64e4d37c9f41a6b7bbc594f91a999712" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fifo_buffer::m_buffer_type</definition>
+        <argsstring></argsstring>
+        <name>m_buffer_type</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="96" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" bodystart="96" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfifo__buffer_1a24b97cd757d665fbcebc72f165da52f3" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int fifo_buffer::m_div_constant</definition>
+        <argsstring></argsstring>
+        <name>m_div_constant</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="97" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" bodystart="97" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfifo__buffer_1a8f50080f07ab0eb64cb1b735ab1e6246" prot="private" static="no" mutable="no">
+        <type>struct <ref refid="structfifo__t" kindref="compound">fifo_t</ref></type>
+        <definition>struct fifo_t fifo_buffer::m_fifo</definition>
+        <argsstring></argsstring>
+        <name>m_fifo</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="97" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" bodystart="98" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfifo__buffer_1a10c70bb29a04e8486248652c6c901176" prot="private" static="no" mutable="no">
+        <type>unsigned char *</type>
+        <definition>unsigned char* fifo_buffer::m_fifoBuffer</definition>
+        <argsstring></argsstring>
+        <name>m_fifoBuffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="99" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" bodystart="99" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfifo__buffer_1a2ea1ab9a88c0bba6cfd764c253456a7d" prot="private" static="no" mutable="no">
+        <type>gr_complex *</type>
+        <definition>gr_complex* fifo_buffer::m_fifoBufferComplex</definition>
+        <argsstring></argsstring>
+        <name>m_fifoBufferComplex</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="100" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" bodystart="100" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classfifo__buffer_1ab084fecfb131b63da1aa48f042a82d36" prot="private" static="no" mutable="no">
+        <type><ref refid="classgr__storage" kindref="compound">gr_storage</ref> *</type>
+        <definition>gr_storage* fifo_buffer::m_fifoBufferStorage</definition>
+        <argsstring></argsstring>
+        <name>m_fifoBufferStorage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="101" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" bodystart="101" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classfifo__buffer_1a86d858f10feb18b2b2526a0d943d7927" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fifo_buffer::fifo_buffer</definition>
+        <argsstring>(size_t bufferSize_=1048576, int buffer_type_=CONST_BUFFER_GR_STORAGE)</argsstring>
+        <name>fifo_buffer</name>
+        <param>
+          <type>size_t</type>
+          <declname>bufferSize_</declname>
+          <defval>1048576</defval>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>buffer_type_</declname>
+          <defval><ref refid="fifo__buffer_8h_1a238925c4129c4c019f55e712012efa9a" kindref="member">CONST_BUFFER_GR_STORAGE</ref></defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="71" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classfifo__buffer_1af02640bac974b553476fb3ef35a1fad7" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>fifo_buffer::~fifo_buffer</definition>
+        <argsstring>()</argsstring>
+        <name>~fifo_buffer</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="72" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classfifo__buffer_1a7a2c4c384b1c56128c0a61953bc5b742" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fifo_buffer::fifo_changeSize</definition>
+        <argsstring>(size_t bufferSize_)</argsstring>
+        <name>fifo_changeSize</name>
+        <param>
+          <type>size_t</type>
+          <declname>bufferSize_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="73" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classfifo__buffer_1a7aa07b2b6dbfa22d460bcf963343b9cb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint fifo_buffer::fifo_getFifoHead</definition>
+        <argsstring>() const</argsstring>
+        <name>fifo_getFifoHead</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="74" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" bodystart="74" bodyend="74"/>
+      </memberdef>
+      <memberdef kind="function" id="classfifo__buffer_1a86784ca09df66493943c9d080a9662d3" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint fifo_buffer::fifo_getFifoTail</definition>
+        <argsstring>() const</argsstring>
+        <name>fifo_getFifoTail</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="75" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" bodystart="75" bodyend="75"/>
+      </memberdef>
+      <memberdef kind="function" id="classfifo__buffer_1a1fce0ccb824eb37f5b9531bd9b4180fa" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint fifo_buffer::fifo_getFifoSize</definition>
+        <argsstring>() const</argsstring>
+        <name>fifo_getFifoSize</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="76" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" bodystart="76" bodyend="76"/>
+      </memberdef>
+      <memberdef kind="function" id="classfifo__buffer_1ae9dfbac3f0645cb57383bdb1fceac759" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint fifo_buffer::fifo_write</definition>
+        <argsstring>(const unsigned char *buff, const uint nBytes)</argsstring>
+        <name>fifo_write</name>
+        <param>
+          <type>const unsigned char *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>const uint</type>
+          <declname>nBytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="77" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classfifo__buffer_1ad82411d2e928b9e39dd5981ebbbff911" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint fifo_buffer::fifo_read</definition>
+        <argsstring>(unsigned char *buff, const uint nBytes)</argsstring>
+        <name>fifo_read</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>const uint</type>
+          <declname>nBytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="78" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classfifo__buffer_1ab7aa3af643eac50340d933dde8a3f6c4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint fifo_buffer::fifo_read_2</definition>
+        <argsstring>(unsigned char *buff, const uint nBytes)</argsstring>
+        <name>fifo_read_2</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>const uint</type>
+          <declname>nBytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="79" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classfifo__buffer_1aeeadc58eee49647bcf3ed684a3f17738" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint fifo_buffer::fifo_read_3</definition>
+        <argsstring>(unsigned char *buff, const uint nBytes)</argsstring>
+        <name>fifo_read_3</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>const uint</type>
+          <declname>nBytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="80" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classfifo__buffer_1a34905c0c8ee631fc1fbfbca9df9ab1ba" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint fifo_buffer::fifo_write_complex</definition>
+        <argsstring>(const gr_complex *buff_complex, const uint nComplex)</argsstring>
+        <name>fifo_write_complex</name>
+        <param>
+          <type>const gr_complex *</type>
+          <declname>buff_complex</declname>
+        </param>
+        <param>
+          <type>const uint</type>
+          <declname>nComplex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="85" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classfifo__buffer_1acd194aaa4c5ec895408ed51935c81b9e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint fifo_buffer::fifo_read_complex</definition>
+        <argsstring>(gr_complex *buff_complex, const uint nComplex)</argsstring>
+        <name>fifo_read_complex</name>
+        <param>
+          <type>gr_complex *</type>
+          <declname>buff_complex</declname>
+        </param>
+        <param>
+          <type>const uint</type>
+          <declname>nComplex</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="86" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classfifo__buffer_1a332185b840cea22c37db1725bf16cf08" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint fifo_buffer::fifo_write_storage</definition>
+        <argsstring>(const gr_storage *buff_storage, const uint nStorage)</argsstring>
+        <name>fifo_write_storage</name>
+        <param>
+          <type>const <ref refid="classgr__storage" kindref="compound">gr_storage</ref> *</type>
+          <declname>buff_storage</declname>
+        </param>
+        <param>
+          <type>const uint</type>
+          <declname>nStorage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="91" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classfifo__buffer_1ae0f2f7dfe607ff89c94b7f2bc50cce4b" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>uint</type>
+        <definition>uint fifo_buffer::fifo_read_storage</definition>
+        <argsstring>(gr_storage *buff_storage, const uint nStorage)</argsstring>
+        <name>fifo_read_storage</name>
+        <param>
+          <type><ref refid="classgr__storage" kindref="compound">gr_storage</ref> *</type>
+          <declname>buff_storage</declname>
+        </param>
+        <param>
+          <type>const uint</type>
+          <declname>nStorage</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="92" column="1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="private-func">
+      <memberdef kind="function" id="classfifo__buffer_1a7df2fef0cc52faa34070081c2b8f1bf6" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>unsigned</type>
+        <definition>unsigned fifo_buffer::isPowerOfTwo</definition>
+        <argsstring>(unsigned int x)</argsstring>
+        <name>isPowerOfTwo</name>
+        <param>
+          <type>unsigned int</type>
+          <declname>x</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="103" column="1"/>
+      </memberdef>
+      <memberdef kind="function" id="classfifo__buffer_1a7d7ddd845d5fc70be9ecc23c0c95272a" prot="private" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void fifo_buffer::fifo_init</definition>
+        <argsstring>(unsigned char *buff, gr_complex *buff_complex, gr_storage *buff_storage, size_t bufferSize_)</argsstring>
+        <name>fifo_init</name>
+        <param>
+          <type>unsigned char *</type>
+          <declname>buff</declname>
+        </param>
+        <param>
+          <type>gr_complex *</type>
+          <declname>buff_complex</declname>
+        </param>
+        <param>
+          <type><ref refid="classgr__storage" kindref="compound">gr_storage</ref> *</type>
+          <declname>buff_storage</declname>
+        </param>
+        <param>
+          <type>size_t</type>
+          <declname>bufferSize_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="104" column="1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" line="68" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/lib/fifo_buffer.h" bodystart="68" bodyend="105"/>
+    <listofallmembers>
+      <member refid="classfifo__buffer_1a86d858f10feb18b2b2526a0d943d7927" prot="public" virt="non-virtual"><scope>fifo_buffer</scope><name>fifo_buffer</name></member>
+      <member refid="classfifo__buffer_1a7a2c4c384b1c56128c0a61953bc5b742" prot="public" virt="non-virtual"><scope>fifo_buffer</scope><name>fifo_changeSize</name></member>
+      <member refid="classfifo__buffer_1a7aa07b2b6dbfa22d460bcf963343b9cb" prot="public" virt="non-virtual"><scope>fifo_buffer</scope><name>fifo_getFifoHead</name></member>
+      <member refid="classfifo__buffer_1a1fce0ccb824eb37f5b9531bd9b4180fa" prot="public" virt="non-virtual"><scope>fifo_buffer</scope><name>fifo_getFifoSize</name></member>
+      <member refid="classfifo__buffer_1a86784ca09df66493943c9d080a9662d3" prot="public" virt="non-virtual"><scope>fifo_buffer</scope><name>fifo_getFifoTail</name></member>
+      <member refid="classfifo__buffer_1a7d7ddd845d5fc70be9ecc23c0c95272a" prot="private" virt="non-virtual"><scope>fifo_buffer</scope><name>fifo_init</name></member>
+      <member refid="classfifo__buffer_1ad82411d2e928b9e39dd5981ebbbff911" prot="public" virt="non-virtual"><scope>fifo_buffer</scope><name>fifo_read</name></member>
+      <member refid="classfifo__buffer_1ab7aa3af643eac50340d933dde8a3f6c4" prot="public" virt="non-virtual"><scope>fifo_buffer</scope><name>fifo_read_2</name></member>
+      <member refid="classfifo__buffer_1aeeadc58eee49647bcf3ed684a3f17738" prot="public" virt="non-virtual"><scope>fifo_buffer</scope><name>fifo_read_3</name></member>
+      <member refid="classfifo__buffer_1acd194aaa4c5ec895408ed51935c81b9e" prot="public" virt="non-virtual"><scope>fifo_buffer</scope><name>fifo_read_complex</name></member>
+      <member refid="classfifo__buffer_1ae0f2f7dfe607ff89c94b7f2bc50cce4b" prot="public" virt="non-virtual"><scope>fifo_buffer</scope><name>fifo_read_storage</name></member>
+      <member refid="classfifo__buffer_1ae9dfbac3f0645cb57383bdb1fceac759" prot="public" virt="non-virtual"><scope>fifo_buffer</scope><name>fifo_write</name></member>
+      <member refid="classfifo__buffer_1a34905c0c8ee631fc1fbfbca9df9ab1ba" prot="public" virt="non-virtual"><scope>fifo_buffer</scope><name>fifo_write_complex</name></member>
+      <member refid="classfifo__buffer_1a332185b840cea22c37db1725bf16cf08" prot="public" virt="non-virtual"><scope>fifo_buffer</scope><name>fifo_write_storage</name></member>
+      <member refid="classfifo__buffer_1ae29e5b43961668ff2443385306964069" prot="private" virt="non-virtual"><scope>fifo_buffer</scope><name>fp_mutex</name></member>
+      <member refid="classfifo__buffer_1a7df2fef0cc52faa34070081c2b8f1bf6" prot="private" virt="non-virtual"><scope>fifo_buffer</scope><name>isPowerOfTwo</name></member>
+      <member refid="classfifo__buffer_1a64e4d37c9f41a6b7bbc594f91a999712" prot="private" virt="non-virtual"><scope>fifo_buffer</scope><name>m_buffer_type</name></member>
+      <member refid="classfifo__buffer_1a24b97cd757d665fbcebc72f165da52f3" prot="private" virt="non-virtual"><scope>fifo_buffer</scope><name>m_div_constant</name></member>
+      <member refid="classfifo__buffer_1a8f50080f07ab0eb64cb1b735ab1e6246" prot="private" virt="non-virtual"><scope>fifo_buffer</scope><name>m_fifo</name></member>
+      <member refid="classfifo__buffer_1a10c70bb29a04e8486248652c6c901176" prot="private" virt="non-virtual"><scope>fifo_buffer</scope><name>m_fifoBuffer</name></member>
+      <member refid="classfifo__buffer_1a2ea1ab9a88c0bba6cfd764c253456a7d" prot="private" virt="non-virtual"><scope>fifo_buffer</scope><name>m_fifoBufferComplex</name></member>
+      <member refid="classfifo__buffer_1ab084fecfb131b63da1aa48f042a82d36" prot="private" virt="non-virtual"><scope>fifo_buffer</scope><name>m_fifoBufferStorage</name></member>
+      <member refid="classfifo__buffer_1af02640bac974b553476fb3ef35a1fad7" prot="public" virt="non-virtual"><scope>fifo_buffer</scope><name>~fifo_buffer</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

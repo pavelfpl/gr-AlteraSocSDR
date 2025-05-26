@@ -22,7 +22,7 @@
 ########################################################################
 include(GrPlatform) #define LIB_SUFFIX
 
-include_directories(${Boost_INCLUDE_DIR})
+include_directories(${Boost_INCLUDE_DIR} ${AT86RF215_INCLUDE_DIRS})
 link_directories(${Boost_LIBRARY_DIRS})
 
 list(APPEND AlteraSocSDR_sources
@@ -41,7 +41,7 @@ if(NOT AlteraSocSDR_sources)
 endif(NOT AlteraSocSDR_sources)
 
 add_library(gnuradio-AlteraSocSDR SHARED ${AlteraSocSDR_sources})
-target_link_libraries(gnuradio-AlteraSocSDR ${Boost_LIBRARIES} ${GNURADIO_ALL_LIBRARIES})
+target_link_libraries(gnuradio-AlteraSocSDR ${Boost_LIBRARIES} ${GNURADIO_ALL_LIBRARIES} ${AT86RF215_LIBRARIES})
 set_target_properties(gnuradio-AlteraSocSDR PROPERTIES DEFINE_SYMBOL "gnuradio_AlteraSocSDR_EXPORTS")
 
 if(APPLE)

@@ -1,0 +1,192 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.13">
+  <compounddef id="classgr__storage" kind="class" language="C++" prot="public">
+    <compoundname>gr_storage</compoundname>
+    <includes refid="gr__storage_8h" local="no">gr_storage.h</includes>
+      <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="classgr__storage_1aa9efa4a2d1711e542e40c52215fe4fa4" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr_storage::msbData0</definition>
+        <argsstring></argsstring>
+        <name>msbData0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" line="26" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr__storage_1a46136d34cadf69c7bc3d5a5018aab659" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr_storage::lsbData0</definition>
+        <argsstring></argsstring>
+        <name>lsbData0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" line="27" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr__storage_1ac19835a7fec3a4eec2120d6f35f4a499" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr_storage::msbData1</definition>
+        <argsstring></argsstring>
+        <name>msbData1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" line="28" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="classgr__storage_1a39585541f3b4c97566d79a4c6dec9d3c" prot="private" static="no" mutable="no">
+        <type>unsigned char</type>
+        <definition>unsigned char gr_storage::lsbData1</definition>
+        <argsstring></argsstring>
+        <name>lsbData1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" line="29" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr__storage_1aecbf7692acb85c0f94841187d32473cc" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr_storage::gr_storage</definition>
+        <argsstring>()</argsstring>
+        <name>gr_storage</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" line="6" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" bodystart="6" bodyend="6"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr__storage_1a7f4fd4882b4ea09d6ba2a14f4dc08dd0" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr_storage::gr_storage</definition>
+        <argsstring>(unsigned char msbData0_, unsigned char lsbData0_, unsigned char msbData1_, unsigned char lsbData1_)</argsstring>
+        <name>gr_storage</name>
+        <param>
+          <type>unsigned char</type>
+          <declname>msbData0_</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>lsbData0_</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>msbData1_</declname>
+        </param>
+        <param>
+          <type>unsigned char</type>
+          <declname>lsbData1_</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" line="7" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" bodystart="7" bodyend="12"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr__storage_1aae848f6191c52b0bd1d52f7d96660a83" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>gr_storage::gr_storage</definition>
+        <argsstring>(const gr_storage &amp;gr)</argsstring>
+        <name>gr_storage</name>
+        <param>
+          <type>const <ref refid="classgr__storage" kindref="compound">gr_storage</ref> &amp;</type>
+          <declname>gr</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" line="16" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" bodystart="16" bodyend="19"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr__storage_1a82fb7d412a66fb0bcd074d3a4ead8cdf" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char gr_storage::getMsbByte0</definition>
+        <argsstring>() const</argsstring>
+        <name>getMsbByte0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" line="21" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" bodystart="21" bodyend="21"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr__storage_1a59547d6e585277798de98c29918cb8bb" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char gr_storage::getLsbByte0</definition>
+        <argsstring>() const</argsstring>
+        <name>getLsbByte0</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" line="22" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" bodystart="22" bodyend="22"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr__storage_1ad7543b5e649c97b684fd5571f6d9a08e" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char gr_storage::getMsbByte1</definition>
+        <argsstring>() const</argsstring>
+        <name>getMsbByte1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" line="23" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" bodystart="23" bodyend="23"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr__storage_1ab5c2ca95e9c02bafed196e041a6de55d" prot="public" static="no" const="yes" explicit="no" inline="yes" virt="non-virtual">
+        <type>unsigned char</type>
+        <definition>unsigned char gr_storage::getLsbByte1</definition>
+        <argsstring>() const</argsstring>
+        <name>getLsbByte1</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" line="24" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" bodystart="24" bodyend="24"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" line="4" column="1" bodyfile="/home/pavelf/gnuradio_addons/gr-AlteraSocSDR/include/AlteraSocSDR/gr_storage.h" bodystart="4" bodyend="30"/>
+    <listofallmembers>
+      <member refid="classgr__storage_1a59547d6e585277798de98c29918cb8bb" prot="public" virt="non-virtual"><scope>gr_storage</scope><name>getLsbByte0</name></member>
+      <member refid="classgr__storage_1ab5c2ca95e9c02bafed196e041a6de55d" prot="public" virt="non-virtual"><scope>gr_storage</scope><name>getLsbByte1</name></member>
+      <member refid="classgr__storage_1a82fb7d412a66fb0bcd074d3a4ead8cdf" prot="public" virt="non-virtual"><scope>gr_storage</scope><name>getMsbByte0</name></member>
+      <member refid="classgr__storage_1ad7543b5e649c97b684fd5571f6d9a08e" prot="public" virt="non-virtual"><scope>gr_storage</scope><name>getMsbByte1</name></member>
+      <member refid="classgr__storage_1aecbf7692acb85c0f94841187d32473cc" prot="public" virt="non-virtual"><scope>gr_storage</scope><name>gr_storage</name></member>
+      <member refid="classgr__storage_1a7f4fd4882b4ea09d6ba2a14f4dc08dd0" prot="public" virt="non-virtual"><scope>gr_storage</scope><name>gr_storage</name></member>
+      <member refid="classgr__storage_1aae848f6191c52b0bd1d52f7d96660a83" prot="public" virt="non-virtual"><scope>gr_storage</scope><name>gr_storage</name></member>
+      <member refid="classgr__storage_1a46136d34cadf69c7bc3d5a5018aab659" prot="private" virt="non-virtual"><scope>gr_storage</scope><name>lsbData0</name></member>
+      <member refid="classgr__storage_1a39585541f3b4c97566d79a4c6dec9d3c" prot="private" virt="non-virtual"><scope>gr_storage</scope><name>lsbData1</name></member>
+      <member refid="classgr__storage_1aa9efa4a2d1711e542e40c52215fe4fa4" prot="private" virt="non-virtual"><scope>gr_storage</scope><name>msbData0</name></member>
+      <member refid="classgr__storage_1ac19835a7fec3a4eec2120d6f35f4a499" prot="private" virt="non-virtual"><scope>gr_storage</scope><name>msbData1</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

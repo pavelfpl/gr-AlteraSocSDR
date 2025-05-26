@@ -1,0 +1,6 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node2" href="$classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex.html" title="&lt;+description of block+&gt; " alt="" coords="149,5,336,47"/>
+<area shape="rect" id="node4" href="$classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex.html" title="&lt;+description of block+&gt; " alt="" coords="141,71,344,112"/>
+<area shape="rect" id="node3" href="$classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl.html" title="gr::AlteraSocSDR::altera\l_socfpga_sdr_sink_complex_impl" alt="" coords="399,5,618,47"/>
+<area shape="rect" id="node5" href="$classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl.html" title="gr::AlteraSocSDR::altera\l_socfpga_sdr_source_complex_impl" alt="" coords="392,71,625,112"/>
+</map>

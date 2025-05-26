@@ -6,9 +6,9 @@
   <flags>throttle</flags>
   <import>import AlteraSocSDR</import>
   <make> #if $type() == "complex"
-    AlteraSocSDR.altera_socfpga_sdr_source_complex($DeviceName,$Frequency, $SampleRate, $GainRF, $GainIF, $WordLength, $ScaleFactor,$ScaleConstant,$BufferLength,$type.size*1,$swap_iq)
+    AlteraSocSDR.altera_socfpga_sdr_source_complex($DeviceName,$Frequency, $SampleRate, $AnalogBw, $DigitalBw, $AgcEnable, $RxGain, $WordLength, $ScaleFactor,$ScaleConstant,$BufferLength,$type.size*1,$swap_iq)
   #else
-    AlteraSocSDR.altera_socfpga_sdr_source_complex($DeviceName,$Frequency, $SampleRate, $GainRF, $GainIF, $WordLength, $ScaleFactor,$ScaleConstant,$BufferLength,$type.size*2,$swap_iq)
+    AlteraSocSDR.altera_socfpga_sdr_source_complex($DeviceName,$Frequency, $SampleRate, $AnalogBw, $DigitalBw, $AgcEnable, $RxGain, $WordLength, $ScaleFactor,$ScaleConstant,$BufferLength,$type.size*2,$swap_iq)
   #end if 
   </make>
   <param>
@@ -20,25 +20,45 @@
   <param>
     <name>Frequency</name>
     <key>Frequency</key>
-    <value>100000000</value>
+    <value>2400000000</value>
     <type>int</type>
   </param>
   <param>
     <name>Sample Rate</name>
     <key>SampleRate</key>
-    <value>1000000</value>
+    <value>400000</value>
     <type>int</type>
   </param>
   <param>
-    <name>Gain RF</name>
-    <key>GainRF</key>
-    <value>0</value>
+    <name>Analog BW</name>
+    <key>AnalogBw</key>
+    <value>200</value>
     <type>int</type>
   </param>
-    <param>
-    <name>Gain IF</name>
-    <key>GainIF</key>
-    <value>0</value>
+  <param>
+    <name>Digital BW</name>
+    <key>DigitalBw</key>
+    <value>0_5</value>
+    <type>string</type>
+  </param>
+  <param>
+    <name>AGC enable</name>
+    <key>AgcEnable</key>
+    <value>False</value>
+    <type>bool</type>
+      <option>	
+       <name>Yes</name>
+       <key>True</key>
+      </option>
+      <option>
+       <name>No</name>
+       <key>False</key>
+      </option>
+  </param>
+  <param>
+    <name>RX Gain</name>
+    <key>RxGain</key>
+    <value>16</value>
     <type>int</type>
   </param>
   <param>

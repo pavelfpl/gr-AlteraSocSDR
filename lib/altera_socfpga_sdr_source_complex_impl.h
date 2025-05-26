@@ -34,11 +34,16 @@ namespace gr {
        static fifo_buffer m_fifo; 		        // Define FIFO buffer
        static int fd_0;
        static bool m_exit_requested;
-       
+       // AT86RF215 parameters
        std::string m_DeviceName;
-       int m_Frequency;
+       unsigned long m_Frequency;
        int m_SampleRate;
-       int m_GainRF,m_GainIF;
+       int m_AnalogBw;
+       std::string m_DigitalBw;
+       bool m_AgcEnable;
+       int m_RxGain;
+       int m_GPIO_RESET;
+       // Word length & scale factor etc.  
        unsigned int m_WordLength;
        bool m_ScaleFactor;
        int m_ScaleConstant;
@@ -56,12 +61,16 @@ namespace gr {
        size_t m_itemsize;
 
        int msgdmaInit();
+       int at86rf215_rx_init();
+       int socfpga_side_init();
        void msgdmaDeInit();
+       void at86rf215_rx_deinit(bool showStatus);
+       void socfpga_side_deinit();
     public:
-      altera_socfpga_sdr_source_complex_impl(const std::string &DeviceName, int Frequency, int SampleRate, int GainRF, int GainIF, unsigned int WordLength, bool ScaleFactor,int ScaleConstant,unsigned int BufferLength,size_t itemsize, bool swap_iq);
+      altera_socfpga_sdr_source_complex_impl(const std::string &DeviceName, unsigned long Frequency, int SampleRate, int AnalogBw, const std::string DigitalBw, bool AgcEnable, int RxGain, unsigned int WordLength, bool ScaleFactor,int ScaleConstant,unsigned int BufferLength,size_t itemsize, bool swap_iq);
       ~altera_socfpga_sdr_source_complex_impl();
 
-      void altera_msgdma_sdr_source_wait(/* altera_socfpga_sdr_source_complex *obj*/);  // virtual reimplement ...
+      void altera_msgdma_sdr_source_wait( /* altera_socfpga_sdr_source_complex *obj*/);  // virtual reimplement ...
       bool stop();                         
       
       // Where all the action really happens ...

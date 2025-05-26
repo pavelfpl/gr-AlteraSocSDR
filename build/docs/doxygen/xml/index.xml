@@ -1,0 +1,321 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.8.13">
+  <compound refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator" kind="class"><name>gr::AlteraSocSDR::altera_socfpga_fir_accelerator</name>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator_1a99cc3a78a2b53185cfb319ac137aa138" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator_1ac87b4ce2f6fc6417201841b45f0f420e" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl" kind="class"><name>gr::AlteraSocSDR::altera_socfpga_fir_accelerator_impl</name>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a5b9b6833a672612388ca03d5b842d95c" kind="variable"><name>fd_0</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a5a35fa5f9a38ac9b1e2495866aecfe02" kind="variable"><name>fd_1</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a3bb5ba5b421732b09bd0337d03d7c403" kind="variable"><name>m_DeviceInputName</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1ae7bdd3c8d9c3fa2e152036fa176051ba" kind="variable"><name>m_DeviceOutputName</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a384d921f1024082514a094f4d0ff9342" kind="variable"><name>m_WordLength</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a13a4b53eef800de014c9b3d43ee84504" kind="variable"><name>m_ScaleInputFactor</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a06846b69b7bc6cbccfa7fba5af1b241c" kind="variable"><name>m_ScaleOutputFactor</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a1696b549da1605fb8178a685c4b9347d" kind="variable"><name>m_itemsizeInput</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a2bee2f67bf831e48bde48f1745b4bccf" kind="variable"><name>m_itemsizeOutput</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a8b0f4ad22370d7849d80d370b0dcae58" kind="variable"><name>m_QUANTIZATION_ONE</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1ac1e29a52876c12ebbd7b800d294d7bd9" kind="variable"><name>m_TWO_QUANTIZATION_ONE</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a8c636347e4da9e886c6051189f86ab41" kind="variable"><name>m_QUANTIZATION_ONE_MASK</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1ab77810bbd15bb9dd9c4cd576edb9a61e" kind="variable"><name>m_MSB_MASK</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a5e02059e40e093f4319a242ebfe38589" kind="variable"><name>m_ScaleConstant</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a2f73040975ccf28012d6ae4857739dc5" kind="variable"><name>m_msgdmaStatus</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a0867c0cbd76637dc9f3d26992fe6601b" kind="variable"><name>buffer_write</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a0299d522d08a54ded76d1b2975265080" kind="variable"><name>buffer_read</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a4c73f03c815f9ebdeedff5d37020c03e" kind="function"><name>msgdmaInit</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a4b8ad210c4458dc2c902a772ca52910c" kind="function"><name>resetFIRFilter</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a69d530c75853a99696705211ab65fcc3" kind="function"><name>altera_socfpga_fir_accelerator_impl</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a695f4f7dddd4fa96b29d1d5129ca4e83" kind="function"><name>~altera_socfpga_fir_accelerator_impl</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1afe8924ff89a426d0f9b6c469080d45bd" kind="function"><name>stop</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1acbf77d7ac016d5889fbc053db686886b" kind="function"><name>forecast</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__accelerator__impl_1a2144a9a0ab3d946806f88858e6de29a9" kind="function"><name>general_work</name></member>
+  </compound>
+  <compound refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator" kind="class"><name>gr::AlteraSocSDR::altera_socfpga_fir_decim_accelerator</name>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator_1a92e75608cdf738a8bebacdde9b4756f7" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator_1a3ba9797c86f2901f319c14d794afe8f9" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl" kind="class"><name>gr::AlteraSocSDR::altera_socfpga_fir_decim_accelerator_impl</name>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a0256df752a07dc1ea6e730e80bc4c548" kind="variable"><name>fd_0</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a3e6dd7f9cfced13715307a7c58d93470" kind="variable"><name>fd_1</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a3b94555d32ad1f322b0833536c83d673" kind="variable"><name>m_decimation</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a683d63b6e42a41b651d410441037935a" kind="variable"><name>m_DeviceInputName</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1ac7050fae05ada214a7df30424240f7e5" kind="variable"><name>m_DeviceOutputName</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a6297d43f35172ed7a221a68e347e9eab" kind="variable"><name>m_WordLength</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1ab54c3dc2dbf3781ca07b4380b242e7c4" kind="variable"><name>m_ScaleInputFactor</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1aedc5a6fc9d0683316240021d36f3f5ce" kind="variable"><name>m_ScaleOutputFactor</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a5932360af52e644c510eb99d0a8afc58" kind="variable"><name>m_itemsizeInput</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a67ba935f7dd39835f9ab5f8c1799b20d" kind="variable"><name>m_itemsizeOutput</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1afbb88dbe18aa42383db7c747bb40a5d9" kind="variable"><name>m_QUANTIZATION_ONE</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a27a26e5e574f32eb208ddd65c0c8f8aa" kind="variable"><name>m_TWO_QUANTIZATION_ONE</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1af4bf1a697ee834aa797b6028acc79ad4" kind="variable"><name>m_QUANTIZATION_ONE_MASK</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a999bb2d4483ca7f5d60d0a141a76d14a" kind="variable"><name>m_MSB_MASK</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a82bf37a139d88d3f3e77fac3175666e9" kind="variable"><name>m_ScaleConstant</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1af2d1f2fe37f05c997512b249d5fee3f5" kind="variable"><name>m_msgdmaStatus</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1aa2bb6a8717d37ee6cfcd59d6a8a7ef00" kind="variable"><name>buffer_write</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1ace3c93a3a3ad800b2ca50c1b32361ccf" kind="variable"><name>buffer_read</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a7cfb9d1f8f0263cda706cac9dfce8f7d" kind="function"><name>msgdmaInit</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a574cb7fc896a57173a98efeeb0d1a501" kind="function"><name>resetFIRFilter</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a946e2945793397a7cdc00fd75d5b9f40" kind="function"><name>altera_socfpga_fir_decim_accelerator_impl</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a9ec99c7d0bcd9993d5dac069db86bf87" kind="function"><name>~altera_socfpga_fir_decim_accelerator_impl</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1a99ac0553ce50db7721e346800ebae833" kind="function"><name>stop</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__decim__accelerator__impl_1acfb86d8fbd1af317d2e76de53eba6258" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator" kind="class"><name>gr::AlteraSocSDR::altera_socfpga_fir_interp_accelerator</name>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator_1a427798720731bda29407d84d44446ae3" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator_1ad49f6fd40b8df7371720d9e60841f21a" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl" kind="class"><name>gr::AlteraSocSDR::altera_socfpga_fir_interp_accelerator_impl</name>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a48c99873edaeb7f7b7f093a07c9764b9" kind="variable"><name>fd_0</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a56c56c9f549fa0e8d21939ee32e60e72" kind="variable"><name>fd_1</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1af4e6f364e9be69e5148c0953a9aebdf8" kind="variable"><name>m_interpolation</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1ab9a4a2cfb60a166212eaaf1422b84c7c" kind="variable"><name>m_DeviceInputName</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a86542906fa42b10eb5e64689f92f7eff" kind="variable"><name>m_DeviceOutputName</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a13d33f4c547eaa534bf531857489e5a9" kind="variable"><name>m_WordLength</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a85cc756c1b6c989a82e08c4102c47830" kind="variable"><name>m_ScaleInputFactor</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a14e84ae191e67abb6a877f138e53d9f5" kind="variable"><name>m_ScaleOutputFactor</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a99b654dec872d8cf74da494513f531a9" kind="variable"><name>m_itemsizeInput</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a1bc3d12e1ad04e52733a6cc435fed111" kind="variable"><name>m_itemsizeOutput</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a94da3370625d40ad5d5463f1c436e2b4" kind="variable"><name>m_QUANTIZATION_ONE</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1acf170dc88dfece6f6f4be365fc6554b3" kind="variable"><name>m_TWO_QUANTIZATION_ONE</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a40dc8dfb49e4c319fede6c2a79ba0e0a" kind="variable"><name>m_QUANTIZATION_ONE_MASK</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a3a71be40e94f397cd1f589622b7d3b52" kind="variable"><name>m_MSB_MASK</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a2b9866181132bb543c832d9ae2332cc6" kind="variable"><name>m_ScaleConstant</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a8a0cdc6530a70110a7190cbdfd9885cd" kind="variable"><name>m_msgdmaStatus</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a4f774deaf217e9fedd00f717135ac575" kind="variable"><name>buffer_write</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a47361e4454a34bf72dfb86c92077bdce" kind="variable"><name>buffer_read</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a6c1242c67858cbd91af67b3917d8d75a" kind="function"><name>msgdmaInit</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1ad40bc627e857efebdeaeeda030196954" kind="function"><name>resetFIRFilter</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a2f923a1becbce9d856de04261732412b" kind="function"><name>altera_socfpga_fir_interp_accelerator_impl</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1aea19d8e023e29365ff272685edc0be10" kind="function"><name>~altera_socfpga_fir_interp_accelerator_impl</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a94051acdd8859db89943b4aa03704640" kind="function"><name>stop</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__fir__interp__accelerator__impl_1a5e733d7fabf5998eaa1e18bad24baf92" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex" kind="class"><name>gr::AlteraSocSDR::altera_socfpga_sdr_sink_complex</name>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex_1a52d64e25ff8e9cc21ff9248e5eddb59b" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex_1a25d6bf1152e755977a3da3211cb61564" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl" kind="class"><name>gr::AlteraSocSDR::altera_socfpga_sdr_sink_complex_impl</name>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a6cc64729c93af5f68c4263f4987824ac" kind="variable"><name>m_fifo</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a5a48dc3eb01d607e8a12837f2ab6c684" kind="variable"><name>fd_1</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1aba85cc5538a7d9b52de39b576ee5973a" kind="variable"><name>m_exit_requested</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1ab124dc196625f46197297d9676d64fb4" kind="variable"><name>m_DeviceName</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a7f215ddb226257b50945d6629e1e4118" kind="variable"><name>m_Frequency</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a9de1f2d5baae6f74b927e07a225377a2" kind="variable"><name>m_SampleRate</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1aea7a8ab7680f54b6576eb028472c673d" kind="variable"><name>m_AnalogBw</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a228e2244eb0e7fa3a6d055379d62024f" kind="variable"><name>m_DigitalBw</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1aaa369489aa1690b256902f5db21bbe08" kind="variable"><name>m_AgcEnable</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a2a68c516fbee082495021df620b359c0" kind="variable"><name>m_TxGain</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1aec3dc7f30bc550e36605471e62429f95" kind="variable"><name>m_WordLength</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a0b44103326f98fe1c021cf1069675d68" kind="variable"><name>m_ScaleFactor</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a47bff4404f578fce3cb034709e0a3f14" kind="variable"><name>m_ScaleConstant</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a40f3e2cc5a80e9091fa0e98f005b1bfd" kind="variable"><name>m_BufferLength</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a100b0169e3bf0495e8729bb5e38eba80" kind="variable"><name>m_swap_iq</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a106c952567b6cdf58d28a9af51b2021a" kind="variable"><name>m_gainCorrection</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a87f3f7f9f313e5601861b6f5e7372314" kind="variable"><name>m_QUANTIZATION_ONE</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1af8c477c8cb37b029b64694972e838cc3" kind="variable"><name>m_TWO_QUANTIZATION_ONE</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1abead97d7e30bacd5db2155bc0ed358c5" kind="variable"><name>m_QUANTIZATION_ONE_MASK</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1afacc6cbc7543c27cfec7754ce3de331a" kind="variable"><name>m_MSB_MASK</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1af94827841654d5b4ad2880790825722c" kind="variable"><name>_thread</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a32635be38650016ca0b384c2b9d27ba2" kind="variable"><name>fp_mutex</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1ad06ddcc6b469f5c181cbdc45e7b28227" kind="variable"><name>m_itemsize</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a13d27b30e47eaa80d33387a0b8f6de08" kind="variable"><name>d_start</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a76300ea50e1d3a1dd46bb8c01c0484a5" kind="variable"><name>d_itemsize</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a5f19e004adc0b9258c666bc85c4ed90f" kind="variable"><name>d_total_samples</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a3f600abcd3de545205429f5200baf4cd" kind="variable"><name>d_sample_rate</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a38d6d316203eb53d8362823f045c27fa" kind="variable"><name>d_sample_period</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a11f3d800ec3d9e92c08ccb136b901320" kind="function"><name>msgdmaInit</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1ae39266acfc5912e18d913a0cb52ccfde" kind="function"><name>at86rf215_tx_init</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a8c91e022957bf99519fcd78c5930b42d" kind="function"><name>socfpga_side_init</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1ae9374b5f8992354d9a47587d0ad81422" kind="function"><name>msgdmaDeInit</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a1b657355cfe54d4bd4698009dd2b36bf" kind="function"><name>at86rf215_tx_deinit</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1aed3f5144908f4e65086d2ff0528aba18" kind="function"><name>socfpga_side_deinit</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a499c4a25d15a396209c0db0645a8ff54" kind="function"><name>altera_socfpga_sdr_sink_complex_impl</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a42eeb57965e39a8f8a0c348ea854b634" kind="function"><name>~altera_socfpga_sdr_sink_complex_impl</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1acb76aeb8f410f3d305b31ee6bba5f3fc" kind="function"><name>altera_msgdma_sdr_sink_wait</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a687452ebcea02656067c3f2cb83863f1" kind="function"><name>set_sample_rate</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a8a28162992d998a3e72fcbc43f7df42f" kind="function"><name>sample_rate</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a76a0e1c4e1ca243a5983c1eca86ce7f2" kind="function"><name>start</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1aab21d2b32341f2de339dc21fb6bb05e0" kind="function"><name>stop</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__sink__complex__impl_1a4e88568099178eabd93626588d9909bb" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex" kind="class"><name>gr::AlteraSocSDR::altera_socfpga_sdr_source_complex</name>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex_1ace2c560d0e8bc40672a44fbc9c5be4c9" kind="typedef"><name>sptr</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex_1a0005d73de592322147f4185e2f2094d0" kind="function"><name>make</name></member>
+  </compound>
+  <compound refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl" kind="class"><name>gr::AlteraSocSDR::altera_socfpga_sdr_source_complex_impl</name>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a961cf49ad74c43666066d5b7da4c28ff" kind="variable"><name>m_fifo</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1acb6fcdf1332df363ba45b36203c19134" kind="variable"><name>fd_0</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a0b4d33e0b850c9a9d44d0fdb5556d49e" kind="variable"><name>m_exit_requested</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a93852cc8f664d05ddad2eff044c8ae84" kind="variable"><name>m_DeviceName</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a2aad43543b5573de60f5592238fe5701" kind="variable"><name>m_Frequency</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a5288740680cd39fa2ce37d999845d715" kind="variable"><name>m_SampleRate</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a73374461a54b87fdf32bfdad5b404153" kind="variable"><name>m_AnalogBw</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a8a291da6b1b96e6a67de27f7f2f66a83" kind="variable"><name>m_DigitalBw</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1ae0e8de90cbe9bfa28a8b272d94e38ded" kind="variable"><name>m_AgcEnable</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a8ff361c28275edcb167fe356f818fb4d" kind="variable"><name>m_RxGain</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a6294e3c60f0590b94076aa549d17b652" kind="variable"><name>m_GPIO_RESET</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a280d280bfae61ead770d1939931655d7" kind="variable"><name>m_WordLength</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a991a67b364bd1ab406426b9c2358e451" kind="variable"><name>m_ScaleFactor</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a20f48d05816d80944f2c7c82c95fbe41" kind="variable"><name>m_ScaleConstant</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a4279a62dfd12e9bb6fd09304063b0d65" kind="variable"><name>m_BufferLength</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a79c8cc57537908e1fa8b8748f6c1a7b7" kind="variable"><name>m_swap_iq</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1aaee35d8136a14a0bd08f60182c059795" kind="variable"><name>m_QUANTIZATION_ONE</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a1a24d56b5499ce9b208cc79254368e72" kind="variable"><name>m_TWO_QUANTIZATION_ONE</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1ad4a55d22035cfc9b16db9a7639bc35ec" kind="variable"><name>m_QUANTIZATION_ONE_MASK</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a5d28e76105909d9c1b1d9aee357c2db8" kind="variable"><name>m_MSB_MASK</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a4428ea1ecfbbda6038adb686a3a004d4" kind="variable"><name>_thread</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a3e4c20d50747134c4989417e23628a0b" kind="variable"><name>fp_mutex</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a8578f98186d8220c04e6e5308fc05251" kind="variable"><name>m_itemsize</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a4ea8573e2b58f8c5615ac3f7ced26b9f" kind="function"><name>msgdmaInit</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1ac958d9090e08440aae29d18dc15b6356" kind="function"><name>at86rf215_rx_init</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1aebf5fe621a4226bfa48c2e520cd68f69" kind="function"><name>socfpga_side_init</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a89cd8f201dc763e37504dd9d75217da3" kind="function"><name>msgdmaDeInit</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1aaa053129093df981550a370037d42cf3" kind="function"><name>at86rf215_rx_deinit</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a48150e15c1773c12ec099e6b117c713d" kind="function"><name>socfpga_side_deinit</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1af202845feecedb538b2d3c4f7c962fde" kind="function"><name>altera_socfpga_sdr_source_complex_impl</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a95bfc7585dbbacbfc5101897a2f543b1" kind="function"><name>~altera_socfpga_sdr_source_complex_impl</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a1596d3e08b53525b930d3b04a62e06b7" kind="function"><name>altera_msgdma_sdr_source_wait</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1adae0a87c54e9252209232b606b8169b5" kind="function"><name>stop</name></member>
+    <member refid="classgr_1_1AlteraSocSDR_1_1altera__socfpga__sdr__source__complex__impl_1a4ce3d91178043f91c3eb8f0b228307a4" kind="function"><name>work</name></member>
+  </compound>
+  <compound refid="classfifo__buffer" kind="class"><name>fifo_buffer</name>
+    <member refid="classfifo__buffer_1ae29e5b43961668ff2443385306964069" kind="variable"><name>fp_mutex</name></member>
+    <member refid="classfifo__buffer_1a64e4d37c9f41a6b7bbc594f91a999712" kind="variable"><name>m_buffer_type</name></member>
+    <member refid="classfifo__buffer_1a24b97cd757d665fbcebc72f165da52f3" kind="variable"><name>m_div_constant</name></member>
+    <member refid="classfifo__buffer_1a8f50080f07ab0eb64cb1b735ab1e6246" kind="variable"><name>m_fifo</name></member>
+    <member refid="classfifo__buffer_1a10c70bb29a04e8486248652c6c901176" kind="variable"><name>m_fifoBuffer</name></member>
+    <member refid="classfifo__buffer_1a2ea1ab9a88c0bba6cfd764c253456a7d" kind="variable"><name>m_fifoBufferComplex</name></member>
+    <member refid="classfifo__buffer_1ab084fecfb131b63da1aa48f042a82d36" kind="variable"><name>m_fifoBufferStorage</name></member>
+    <member refid="classfifo__buffer_1a86d858f10feb18b2b2526a0d943d7927" kind="function"><name>fifo_buffer</name></member>
+    <member refid="classfifo__buffer_1af02640bac974b553476fb3ef35a1fad7" kind="function"><name>~fifo_buffer</name></member>
+    <member refid="classfifo__buffer_1a7a2c4c384b1c56128c0a61953bc5b742" kind="function"><name>fifo_changeSize</name></member>
+    <member refid="classfifo__buffer_1a7aa07b2b6dbfa22d460bcf963343b9cb" kind="function"><name>fifo_getFifoHead</name></member>
+    <member refid="classfifo__buffer_1a86784ca09df66493943c9d080a9662d3" kind="function"><name>fifo_getFifoTail</name></member>
+    <member refid="classfifo__buffer_1a1fce0ccb824eb37f5b9531bd9b4180fa" kind="function"><name>fifo_getFifoSize</name></member>
+    <member refid="classfifo__buffer_1ae9dfbac3f0645cb57383bdb1fceac759" kind="function"><name>fifo_write</name></member>
+    <member refid="classfifo__buffer_1ad82411d2e928b9e39dd5981ebbbff911" kind="function"><name>fifo_read</name></member>
+    <member refid="classfifo__buffer_1ab7aa3af643eac50340d933dde8a3f6c4" kind="function"><name>fifo_read_2</name></member>
+    <member refid="classfifo__buffer_1aeeadc58eee49647bcf3ed684a3f17738" kind="function"><name>fifo_read_3</name></member>
+    <member refid="classfifo__buffer_1a34905c0c8ee631fc1fbfbca9df9ab1ba" kind="function"><name>fifo_write_complex</name></member>
+    <member refid="classfifo__buffer_1acd194aaa4c5ec895408ed51935c81b9e" kind="function"><name>fifo_read_complex</name></member>
+    <member refid="classfifo__buffer_1a332185b840cea22c37db1725bf16cf08" kind="function"><name>fifo_write_storage</name></member>
+    <member refid="classfifo__buffer_1ae0f2f7dfe607ff89c94b7f2bc50cce4b" kind="function"><name>fifo_read_storage</name></member>
+    <member refid="classfifo__buffer_1a7df2fef0cc52faa34070081c2b8f1bf6" kind="function"><name>isPowerOfTwo</name></member>
+    <member refid="classfifo__buffer_1a7d7ddd845d5fc70be9ecc23c0c95272a" kind="function"><name>fifo_init</name></member>
+  </compound>
+  <compound refid="structfifo__t" kind="struct"><name>fifo_t</name>
+    <member refid="structfifo__t_1a7e98d3cf98d7b5a7a8c8f6e7b3facd28" kind="variable"><name>fifoBuffer</name></member>
+    <member refid="structfifo__t_1a9408d69d7e1b7ab45217f24a5681507b" kind="variable"><name>fifoBufferComplex</name></member>
+    <member refid="structfifo__t_1a1528dbd979e7787a972f7bc679c19764" kind="variable"><name>fifoBufferStorage</name></member>
+    <member refid="structfifo__t_1a811b4c98280d1b52ffef15a2f1d7b3e1" kind="variable"><name>fifoHead</name></member>
+    <member refid="structfifo__t_1abb4d04d88585902e976003d9b393f438" kind="variable"><name>fifoTail</name></member>
+    <member refid="structfifo__t_1a82d658d9f81b67d4162c00c360b45e07" kind="variable"><name>fifoMask</name></member>
+    <member refid="structfifo__t_1aaf609a37355fae249afd50798ca68f4c" kind="variable"><name>fifoSize</name></member>
+  </compound>
+  <compound refid="classgr__storage" kind="class"><name>gr_storage</name>
+    <member refid="classgr__storage_1aa9efa4a2d1711e542e40c52215fe4fa4" kind="variable"><name>msbData0</name></member>
+    <member refid="classgr__storage_1a46136d34cadf69c7bc3d5a5018aab659" kind="variable"><name>lsbData0</name></member>
+    <member refid="classgr__storage_1ac19835a7fec3a4eec2120d6f35f4a499" kind="variable"><name>msbData1</name></member>
+    <member refid="classgr__storage_1a39585541f3b4c97566d79a4c6dec9d3c" kind="variable"><name>lsbData1</name></member>
+    <member refid="classgr__storage_1aecbf7692acb85c0f94841187d32473cc" kind="function"><name>gr_storage</name></member>
+    <member refid="classgr__storage_1a7f4fd4882b4ea09d6ba2a14f4dc08dd0" kind="function"><name>gr_storage</name></member>
+    <member refid="classgr__storage_1aae848f6191c52b0bd1d52f7d96660a83" kind="function"><name>gr_storage</name></member>
+    <member refid="classgr__storage_1a82fb7d412a66fb0bcd074d3a4ead8cdf" kind="function"><name>getMsbByte0</name></member>
+    <member refid="classgr__storage_1a59547d6e585277798de98c29918cb8bb" kind="function"><name>getLsbByte0</name></member>
+    <member refid="classgr__storage_1ad7543b5e649c97b684fd5571f6d9a08e" kind="function"><name>getMsbByte1</name></member>
+    <member refid="classgr__storage_1ab5c2ca95e9c02bafed196e041a6de55d" kind="function"><name>getLsbByte1</name></member>
+  </compound>
+  <compound refid="namespacegr" kind="namespace"><name>gr</name>
+  </compound>
+  <compound refid="namespacegr_1_1AlteraSocSDR" kind="namespace"><name>gr::AlteraSocSDR</name>
+  </compound>
+  <compound refid="namespacestd" kind="namespace"><name>std</name>
+  </compound>
+  <compound refid="altera__msgdma__ioctl_8h" kind="file"><name>altera_msgdma_ioctl.h</name>
+    <member refid="altera__msgdma__ioctl_8h_1a0adfb47262a0b102cfa887ae8d206abb" kind="define"><name>ALTERA_MSGDMA_MAGIC</name></member>
+    <member refid="altera__msgdma__ioctl_8h_1af6d8d079387b6aaad56688343ba6dce8" kind="define"><name>ALTERA_MSGDMA_BUFFER_SIZE</name></member>
+    <member refid="altera__msgdma__ioctl_8h_1a63a0ce5d10194b309e1de41b211f86d7" kind="define"><name>ALTERA_MSGDMA_MIN_BLOCK_SIZE</name></member>
+    <member refid="altera__msgdma__ioctl_8h_1a96ea54e59916226d44c495335af74f3b" kind="define"><name>ALTERA_MSGDMA_STOP</name></member>
+    <member refid="altera__msgdma__ioctl_8h_1a5fab489659b15fa0323f5c72ce270f9c" kind="define"><name>ALTERA_MSGDMA_RESET</name></member>
+    <member refid="altera__msgdma__ioctl_8h_1ab0684bd18514ba6b60d2d99806dab551" kind="define"><name>ALTERA_MSGDMA_STOP_RESET</name></member>
+    <member refid="altera__msgdma__ioctl_8h_1ae11c9e2362b349a9f9471a5a40e57cb0" kind="define"><name>IO_ALTERA_MSGDMA_SET_BUFFER_SIZE</name></member>
+    <member refid="altera__msgdma__ioctl_8h_1af397a3b37a02f90995e1fbe4234af617" kind="define"><name>IO_ALTERA_MSGDMA_SET_MIN_BLOCK_SIZE</name></member>
+    <member refid="altera__msgdma__ioctl_8h_1a61beb2f760e589005b51f147d1c568da" kind="define"><name>IO_ALTERA_MSGDMA_STOP</name></member>
+    <member refid="altera__msgdma__ioctl_8h_1ae564948515bc04d41df75ea1d0831292" kind="define"><name>IO_ALTERA_MSGDMA_RESET</name></member>
+    <member refid="altera__msgdma__ioctl_8h_1ab5cf00e0c14c9a83dc138d353231e4be" kind="define"><name>IO_ALTERA_MSGDMA_STOP_RESET</name></member>
+  </compound>
+  <compound refid="altera__socfpga__fir__accelerator_8h" kind="file"><name>altera_socfpga_fir_accelerator.h</name>
+  </compound>
+  <compound refid="altera__socfpga__fir__accelerator__impl_8h" kind="file"><name>altera_socfpga_fir_accelerator_impl.h</name>
+    <member refid="altera__socfpga__fir__accelerator__impl_8h_1accd363992982d6a039ef370205701c5b" kind="define"><name>CONST_KMALLOC_MULTIPLE</name></member>
+    <member refid="altera__socfpga__fir__accelerator__impl_8h_1a3aecf3f75e128d3f103b79fa3afc6830" kind="define"><name>CONST_MIN_BLOCK_SIZE</name></member>
+    <member refid="altera__socfpga__fir__accelerator__impl_8h_1ae9c8e983a10a2609d93dd9eece04d749" kind="define"><name>CONST_ARRAY_SIZE</name></member>
+    <member refid="altera__socfpga__fir__accelerator__impl_8h_1a2e10186e5e1932c18c44e532cccd6300" kind="define"><name>CONST_ALTERA_MSGDMA_OK</name></member>
+    <member refid="altera__socfpga__fir__accelerator__impl_8h_1a723db0c4768c75e878c7bd6a516243ec" kind="define"><name>CONST_ALTERA_MSGDMA_FAILED</name></member>
+    <member refid="altera__socfpga__fir__accelerator__impl_8h_1a1a60ec6c5b0a8735ac2ce398f99cb987" kind="define"><name>CONST_ALTERA_MSGDMA_WRITE_FAILED</name></member>
+    <member refid="altera__socfpga__fir__accelerator__impl_8h_1a26aca295582a7cf2d8ecf373c07b24fb" kind="define"><name>CONST_ALTERA_MSGDMA_READ_FAILED</name></member>
+    <member refid="altera__socfpga__fir__accelerator__impl_8h_1a0cb4df6b021e897da6bf08843b1b67dd" kind="define"><name>CONST_SLEEP_INTERVAL_MICRO_SECONDS</name></member>
+    <member refid="altera__socfpga__fir__accelerator__impl_8h_1a6acd27ad5c567736f8ce332be490a6b6" kind="define"><name>CONST_SLEEP_INTERVAL_MILI_SECONDS</name></member>
+    <member refid="altera__socfpga__fir__accelerator__impl_8h_1acc129730c510940db82e7997c0c06b4b" kind="define"><name>CONST_ALTERA_RESET_ARRAY_SIZE</name></member>
+  </compound>
+  <compound refid="altera__socfpga__fir__decim__accelerator_8h" kind="file"><name>altera_socfpga_fir_decim_accelerator.h</name>
+  </compound>
+  <compound refid="altera__socfpga__fir__decim__accelerator__impl_8h" kind="file"><name>altera_socfpga_fir_decim_accelerator_impl.h</name>
+    <member refid="altera__socfpga__fir__decim__accelerator__impl_8h_1accd363992982d6a039ef370205701c5b" kind="define"><name>CONST_KMALLOC_MULTIPLE</name></member>
+    <member refid="altera__socfpga__fir__decim__accelerator__impl_8h_1a3aecf3f75e128d3f103b79fa3afc6830" kind="define"><name>CONST_MIN_BLOCK_SIZE</name></member>
+    <member refid="altera__socfpga__fir__decim__accelerator__impl_8h_1ae9c8e983a10a2609d93dd9eece04d749" kind="define"><name>CONST_ARRAY_SIZE</name></member>
+    <member refid="altera__socfpga__fir__decim__accelerator__impl_8h_1a2e10186e5e1932c18c44e532cccd6300" kind="define"><name>CONST_ALTERA_MSGDMA_OK</name></member>
+    <member refid="altera__socfpga__fir__decim__accelerator__impl_8h_1a723db0c4768c75e878c7bd6a516243ec" kind="define"><name>CONST_ALTERA_MSGDMA_FAILED</name></member>
+    <member refid="altera__socfpga__fir__decim__accelerator__impl_8h_1a1a60ec6c5b0a8735ac2ce398f99cb987" kind="define"><name>CONST_ALTERA_MSGDMA_WRITE_FAILED</name></member>
+    <member refid="altera__socfpga__fir__decim__accelerator__impl_8h_1a26aca295582a7cf2d8ecf373c07b24fb" kind="define"><name>CONST_ALTERA_MSGDMA_READ_FAILED</name></member>
+    <member refid="altera__socfpga__fir__decim__accelerator__impl_8h_1a0cb4df6b021e897da6bf08843b1b67dd" kind="define"><name>CONST_SLEEP_INTERVAL_MICRO_SECONDS</name></member>
+    <member refid="altera__socfpga__fir__decim__accelerator__impl_8h_1a6acd27ad5c567736f8ce332be490a6b6" kind="define"><name>CONST_SLEEP_INTERVAL_MILI_SECONDS</name></member>
+    <member refid="altera__socfpga__fir__decim__accelerator__impl_8h_1acc129730c510940db82e7997c0c06b4b" kind="define"><name>CONST_ALTERA_RESET_ARRAY_SIZE</name></member>
+  </compound>
+  <compound refid="altera__socfpga__fir__interp__accelerator_8h" kind="file"><name>altera_socfpga_fir_interp_accelerator.h</name>
+  </compound>
+  <compound refid="altera__socfpga__fir__interp__accelerator__impl_8h" kind="file"><name>altera_socfpga_fir_interp_accelerator_impl.h</name>
+    <member refid="altera__socfpga__fir__interp__accelerator__impl_8h_1accd363992982d6a039ef370205701c5b" kind="define"><name>CONST_KMALLOC_MULTIPLE</name></member>
+    <member refid="altera__socfpga__fir__interp__accelerator__impl_8h_1a3aecf3f75e128d3f103b79fa3afc6830" kind="define"><name>CONST_MIN_BLOCK_SIZE</name></member>
+    <member refid="altera__socfpga__fir__interp__accelerator__impl_8h_1ae9c8e983a10a2609d93dd9eece04d749" kind="define"><name>CONST_ARRAY_SIZE</name></member>
+    <member refid="altera__socfpga__fir__interp__accelerator__impl_8h_1a2e10186e5e1932c18c44e532cccd6300" kind="define"><name>CONST_ALTERA_MSGDMA_OK</name></member>
+    <member refid="altera__socfpga__fir__interp__accelerator__impl_8h_1a723db0c4768c75e878c7bd6a516243ec" kind="define"><name>CONST_ALTERA_MSGDMA_FAILED</name></member>
+    <member refid="altera__socfpga__fir__interp__accelerator__impl_8h_1a1a60ec6c5b0a8735ac2ce398f99cb987" kind="define"><name>CONST_ALTERA_MSGDMA_WRITE_FAILED</name></member>
+    <member refid="altera__socfpga__fir__interp__accelerator__impl_8h_1a26aca295582a7cf2d8ecf373c07b24fb" kind="define"><name>CONST_ALTERA_MSGDMA_READ_FAILED</name></member>
+    <member refid="altera__socfpga__fir__interp__accelerator__impl_8h_1a0cb4df6b021e897da6bf08843b1b67dd" kind="define"><name>CONST_SLEEP_INTERVAL_MICRO_SECONDS</name></member>
+    <member refid="altera__socfpga__fir__interp__accelerator__impl_8h_1a6acd27ad5c567736f8ce332be490a6b6" kind="define"><name>CONST_SLEEP_INTERVAL_MILI_SECONDS</name></member>
+    <member refid="altera__socfpga__fir__interp__accelerator__impl_8h_1acc129730c510940db82e7997c0c06b4b" kind="define"><name>CONST_ALTERA_RESET_ARRAY_SIZE</name></member>
+  </compound>
+  <compound refid="altera__socfpga__sdr__sink__complex_8h" kind="file"><name>altera_socfpga_sdr_sink_complex.h</name>
+  </compound>
+  <compound refid="altera__socfpga__sdr__sink__complex__impl_8h" kind="file"><name>altera_socfpga_sdr_sink_complex_impl.h</name>
+  </compound>
+  <compound refid="altera__socfpga__sdr__source__complex_8h" kind="file"><name>altera_socfpga_sdr_source_complex.h</name>
+  </compound>
+  <compound refid="altera__socfpga__sdr__source__complex__impl_8h" kind="file"><name>altera_socfpga_sdr_source_complex_impl.h</name>
+  </compound>
+  <compound refid="api_8h" kind="file"><name>api.h</name>
+    <member refid="api_8h_1a9b7e52d43548ea8ceb40f4f672e2ea74" kind="define"><name>ALTERASOCSDR_API</name></member>
+  </compound>
+  <compound refid="fifo__buffer_8h" kind="file"><name>fifo_buffer.h</name>
+    <member refid="fifo__buffer_8h_1a4e59c958d86e8b54bd3db77843b43cbc" kind="define"><name>CONST_BUFFER_UINT_8</name></member>
+    <member refid="fifo__buffer_8h_1a08ffa0145dfe10ae3059c846e958128b" kind="define"><name>CONST_BUFFER_COMPLEX</name></member>
+    <member refid="fifo__buffer_8h_1a238925c4129c4c019f55e712012efa9a" kind="define"><name>CONST_BUFFER_GR_STORAGE</name></member>
+  </compound>
+  <compound refid="gr__storage_8h" kind="file"><name>gr_storage.h</name>
+  </compound>
+  <compound refid="group__defs_8dox" kind="file"><name>group_defs.dox</name>
+  </compound>
+  <compound refid="main__page_8dox" kind="file"><name>main_page.dox</name>
+  </compound>
+  <compound refid="group__block" kind="group"><name>block</name>
+  </compound>
+  <compound refid="dir_5f75e6c343ccae577ff15a600d35a891" kind="dir"><name>AlteraSocSDR</name>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_97aefd0d527b934f1d99a682da8fe6a9" kind="dir"><name>lib</name>
+  </compound>
+  <compound refid="indexpage" kind="page"><name>index</name>
+  </compound>
+</doxygenindex>
