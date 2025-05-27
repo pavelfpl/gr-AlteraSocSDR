@@ -1,7 +1,10 @@
 # gr-AlteraSocSDR
 
 **gr-AlteraSocSDR** repository contains blocks for **GnuRadio** (embedded) based on **Intel/Altera mSGDMA kernel driver**  
-https://github.com/pavelfpl/altera_msgdma_st
+https://github.com/pavelfpl/altera_msgdma_st  
+
+This branch contains HW support for Microchip AT86RF215 and depends on lib_at86rf215 package or library (https://github.com/pavelfpl/at86rf215_lib)  
+Install this library before to be able successfully compile GnuRadio OOT package (mandatory dependency for this branch).
 
 ## Building
 >This module requires embedded **Gnuradio 3.7.x**, running on SocFPGA (Cyclone V / Arria 10). Blocks can be build on standard Linux desktop too, but can be only used for creating **Gnuradio Companion** flowcharts. Support for 3.8 branch is planned.
@@ -30,7 +33,7 @@ make install
 sudo ldconfig
 ```
 ## Building embedded Gnuradio 3.7.x
->**Gnuradio 3.7.x** could be compiled on target embedded platform (without GUI). Tested with Gnuradio 3.7.13.4 and Debian 9/10 rootfs.
+>**Gnuradio 3.7.x** could be compiled on target embedded platform (without GUI). Tested with Gnuradio 3.7.13.4 and Debian 9/10/ rootfs.
 
 ```
 sudo apt install python-cheetah python-lxml python-thrift python-sphinx doxygen python2.7-numpy python-numpy libclalsadrv-dev libgsl-dev libzmq5 libfftw3-dev
@@ -77,9 +80,13 @@ export PKG_CONFIG_PATH=$GNURADIO_PATH/lib/pkgconfig:$PKG_CONFIG_PATH
 > `altera_socfpga_sdr_sink_complex` and `altera_socfpga_sdr_source_complex`
 
 - `Device Name` - name of MSGDMA Linux Device (e.g. `/dev/dev/altera_msgdma_wr0` or `/dev/altera_msgdma_rd0`)
-- `Frequency` - center frequency (for future use only!)
-- `Sample Rate` - sample rate 
-- `Gain RF,IF` - RF/IF gain (for future use only!)
+- `Frequency` - center frequency (in Hz), see at86rf215 datasheet for valid values)
+- `Sample Rate` - sample rate (400e3 = 400KSPS as minimum, 4000 --> 4000e3 = 4MSPS as maximum)
+- `Analog BW` - analog TX/RX cut off frequency, see at86rf215 datasheet and lib_at86rf215 for valid values) 
+- `Digital BW` - digital TX/RX cut off ratio, see at86rf215 datasheet and lib_at86rf215 for valid values)
+- `AGC enable` - enable or disable AGC (RX only - source only)
+- 'RX Gain` - RX gain setting in case of AGC is disabled (RX only - source only)
+- 'TX Gain` - TX gain setting (TX only - sink only)
 - `Word Length` - input or output WORD length (default is 16 bits)
 - `Scale Factor` - scale factor (YES/NO)
 - `Scale Constant` - scale CONSTANT for previous SCALE factor option (sink - multiplication / source - division)
@@ -88,7 +95,7 @@ export PKG_CONFIG_PATH=$GNURADIO_PATH/lib/pkgconfig:$PKG_CONFIG_PATH
 - `Swap IQ` - swap IQ parts
 - `Gain Correction` - fine scale correction (sink only)
 
-![Source_sink](https://github.com/pavelfpl/gr-AlteraSocSDR/blob/master/source_sink_socfpga.png)
+![Source_sink](https://github.com/pavelfpl/gr-AlteraSocSDR/blob/at86rf215/source_sink_socfpga-at86rf215.png)
 
 ## 2] GNU Radio MSGDMA FIR accelerators (FIR, FIR decimation and FIR interpolation) 
 > `altera_socfpga_fir_accelerator` , `altera_socfpga_fir_decim_accelerator` and `altera_socfpga_fir_interp_accelerator_impl`
@@ -102,5 +109,5 @@ export PKG_CONFIG_PATH=$GNURADIO_PATH/lib/pkgconfig:$PKG_CONFIG_PATH
 - `Decimation` - decimation factor (1,2,4,8,...)
 - `Interpolation` - interpolation factor (1,2,4,8,...)
 
-![FIR](https://github.com/pavelfpl/gr-AlteraSocSDR/blob/master/fir_accelerators.png)
+![FIR](https://github.com/pavelfpl/gr-AlteraSocSDR/blob/at86rf215/fir_accelerators.png)
 
