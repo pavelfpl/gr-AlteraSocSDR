@@ -46,7 +46,7 @@ namespace gr {
        * class. AlteraSocSDR::altera_socfpga_sdr_source_complex::make is the public interface for
        * creating new instances.
        */
-      static sptr make(const std::string &DeviceName = "/dev/altera_msgdma_rd0" ,unsigned long Frequency = 2400e6, int SampleRate = 400000 , int AnalogBw = 200, const std::string DigitalBw = "0_5", bool AgcEnable = false, int RxGain = 20, unsigned int WordLength = 16, bool ScaleFactor = true,int ScaleConstant = 8192,  unsigned int BufferLength = 1048576,size_t itemsize = sizeof(gr_complex), bool swap_iq = false);
+      static sptr make(const std::string &DeviceName = "/dev/altera_msgdma_rd0" ,unsigned long Frequency = 2400e6, int SampleRate = 400000 , int AnalogBw = 200, const std::string DigitalBw = "0_5", bool AgcEnable = false, int RxGain = 20, unsigned int WordLength = 16, bool ScaleFactor = true, int ScaleConstant = 8192,  unsigned int BufferLength = 1048576,size_t itemsize = sizeof(gr_complex), bool swap_iq = false);
     };
 
   } // namespace AlteraSocSDR

@@ -38,12 +38,13 @@ namespace gr {
 	
        std::string m_DeviceName;
        // AT86RF215 parameters
-       int m_Frequency;
+       double m_Frequency;
        int m_SampleRate;
        int m_AnalogBw;
        std::string m_DigitalBw;
        bool m_AgcEnable;
        int m_TxGain;
+       bool m_radioInitialized;
        // Word length & scale factor etc. 
        unsigned int m_WordLength;
        bool m_ScaleFactor;
@@ -51,6 +52,7 @@ namespace gr {
        unsigned int m_BufferLength;
        bool m_swap_iq;
        float m_gainCorrection;
+       int m_oversampleRatio;
 
        int m_QUANTIZATION_ONE;	      		     	// int ...
        int m_TWO_QUANTIZATION_ONE;	  		        // int ...
@@ -74,7 +76,7 @@ namespace gr {
        void at86rf215_tx_deinit(bool showStatus);
        void socfpga_side_deinit();
      public:
-      altera_socfpga_sdr_sink_complex_impl(const std::string &DeviceName, unsigned long  Frequency, int SampleRate, int AnalogBw, const std::string DigitalBw, int TxGain, unsigned int WordLength, bool ScaleFactor,int ScaleConstant, unsigned int BufferLength, size_t itemsize, bool swap_iq, float gainCorrection);
+      altera_socfpga_sdr_sink_complex_impl(const std::string &DeviceName, double  Frequency, int SampleRate, int AnalogBw, const std::string DigitalBw, int TxGain, unsigned int WordLength, bool ScaleFactor,int ScaleConstant, unsigned int BufferLength, size_t itemsize, bool swap_iq, float gainCorrection, int oversampleRatio);
       ~altera_socfpga_sdr_sink_complex_impl();
 
       void altera_msgdma_sdr_sink_wait(/*altera_socfpga_sdr_sink_complex *obj*/); // static

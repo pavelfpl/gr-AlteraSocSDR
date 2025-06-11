@@ -110,20 +110,20 @@ namespace gr {
     bool altera_socfpga_sdr_sink_complex_impl::m_exit_requested;
 
     altera_socfpga_sdr_sink_complex::sptr
-    altera_socfpga_sdr_sink_complex::make(const std::string &DeviceName, unsigned long Frequency, int SampleRate, int AnalogBw, const std::string DigitalBw, int TxGain, unsigned int WordLength, bool ScaleFactor, int ScaleConstant,unsigned int BufferLength,size_t itemsize,bool swap_iq, float gainCorrection)
+    altera_socfpga_sdr_sink_complex::make(const std::string &DeviceName, double Frequency, int SampleRate, int AnalogBw, const std::string DigitalBw, int TxGain, unsigned int WordLength, bool ScaleFactor, int ScaleConstant,unsigned int BufferLength,size_t itemsize,bool swap_iq, float gainCorrection, int oversampleRatio)
     {
       return gnuradio::get_initial_sptr
-        (new altera_socfpga_sdr_sink_complex_impl(DeviceName,Frequency, SampleRate, AnalogBw, DigitalBw, TxGain, WordLength, ScaleFactor,ScaleConstant, BufferLength,itemsize,swap_iq, gainCorrection));
+        (new altera_socfpga_sdr_sink_complex_impl(DeviceName,Frequency, SampleRate, AnalogBw, DigitalBw, TxGain, WordLength, ScaleFactor,ScaleConstant, BufferLength,itemsize,swap_iq, gainCorrection, oversampleRatio));
     }  
 
     /*
      * The private constructor
      */
-    altera_socfpga_sdr_sink_complex_impl::altera_socfpga_sdr_sink_complex_impl(const std::string &DeviceName, unsigned long  Frequency, int SampleRate, int AnalogBw, const std::string DigitalBw, int TxGain, unsigned int WordLength, bool ScaleFactor, int ScaleConstant, unsigned int BufferLength, size_t itemsize, bool swap_iq, float gainCorrection)
+    altera_socfpga_sdr_sink_complex_impl::altera_socfpga_sdr_sink_complex_impl(const std::string &DeviceName, double Frequency, int SampleRate, int AnalogBw, const std::string DigitalBw, int TxGain, unsigned int WordLength, bool ScaleFactor, int ScaleConstant, unsigned int BufferLength, size_t itemsize, bool swap_iq, float gainCorrection, int oversampleRatio)
       : gr::sync_block("altera_socfpga_sdr_sink_complex",
         gr::io_signature::make(1,1,itemsize), 		// - sizeof(gr_complex) - gr::io_signature::make(<+MIN_IN+>, <+MAX_IN+>, sizeof(<+ITYPE+>)),
         gr::io_signature::make(0,0,0)),                 // - gr::io_signature::make(<+MIN_OUT+>, <+MAX_OUT+>, sizeof(<+OTYPE+>))),
-        m_DeviceName(DeviceName), m_Frequency(Frequency), m_SampleRate(SampleRate), m_AnalogBw(AnalogBw), m_DigitalBw(DigitalBw), m_TxGain(TxGain), m_WordLength(WordLength), m_ScaleFactor(ScaleFactor), m_ScaleConstant(ScaleConstant), m_BufferLength(BufferLength), m_itemsize(itemsize),m_swap_iq(swap_iq),m_gainCorrection(gainCorrection)
+        m_DeviceName(DeviceName), m_Frequency(Frequency), m_SampleRate(SampleRate), m_AnalogBw(AnalogBw), m_DigitalBw(DigitalBw), m_TxGain(TxGain), m_WordLength(WordLength), m_ScaleFactor(ScaleFactor), m_ScaleConstant(ScaleConstant), m_BufferLength(BufferLength), m_itemsize(itemsize),m_swap_iq(swap_iq),m_gainCorrection(gainCorrection),m_oversampleRatio(oversampleRatio) 
     {
 
       if(m_WordLength < 10 || m_WordLength > 16){
@@ -152,13 +152,15 @@ namespace gr {
 
       set_output_multiple(CONST_OUTPUT_MULTIPLE); 			          // TEST this setting - e.g. for 8192, 16384, 32768, 65536, ...
 
+      m_radioInitialized = false;
+      
       // Init AT86RF215 device first ...
       // -------------------------------
       if(at86rf215_tx_init() != CONST_AT86RF215_INIT_OK){
          cout << "Module init error - at86rf215 side" <<endl; 
          m_exit_requested = true; 
       }
-      
+            
       // FPGA side control initialize ...
       // --------------------------------
       if(!m_exit_requested){ 
@@ -184,7 +186,7 @@ namespace gr {
       
       // Set sample rate ...
       // -------------------
-      set_sample_rate(SampleRate);
+      set_sample_rate(m_SampleRate/m_oversampleRatio);
 
       /* Create write stream THREAD [http://antonym.org/2009/05/threading-with-boost---part-i-creating-threads.html]
          and [http://antonym.org/2010/01/threading-with-boost---part-ii-threading-challenges.html]
@@ -416,12 +418,14 @@ namespace gr {
         // -- Set radio --
         if(m_Frequency < 2000e6){
            cout << "Applying configuration for sub-GHz ..." << endl;
-           at86rf215_setup_iq_radio_transmit (&dev_tx, at86rf215_rf_channel_900mhz, freqOK ? m_Frequency : 433e6, &tx_control, 0, at86rf215_iq_clock_data_skew_1_906ns);  // e.g -  433e6
+           at86rf215_setup_iq_radio_transmit (&dev_tx, at86rf215_rf_channel_900mhz, freqOK ? (uint64_t)m_Frequency : (uint64_t)433e6, &tx_control, 0, at86rf215_iq_clock_data_skew_1_906ns);  // e.g -  433e6
         }else{
            cout << "Applying configuration for 2.4GHz ..." << endl;
-           at86rf215_setup_iq_radio_transmit (&dev_tx, at86rf215_rf_channel_2400mhz, freqOK ? m_Frequency : 2400e6, &tx_control, 0, at86rf215_iq_clock_data_skew_1_906ns); // e.g -  2400e6
+           at86rf215_setup_iq_radio_transmit (&dev_tx, at86rf215_rf_channel_2400mhz, freqOK ? (uint64_t)m_Frequency : (uint64_t)2400e6, &tx_control, 0, at86rf215_iq_clock_data_skew_1_906ns); // e.g -  2400e6
         }
-        
+      
+        m_radioInitialized = true;
+
         // Return success status ...
         return CONST_AT86RF215_INIT_OK; 
         
@@ -433,14 +437,18 @@ namespace gr {
         
         at86rf215_irq_st irq = {0};
         
-        // Print status of the device at the end ...
-        if(showStatus){
-           at86rf215_get_iq_sync_status(&dev_tx);
-           at86rf215_get_irqs(&dev_tx, &irq, 1);
+        if(m_radioInitialized){
+           // Print status of the device at the end ...
+           if(showStatus){
+              at86rf215_get_iq_sync_status(&dev_tx);
+              at86rf215_get_irqs(&dev_tx, &irq, 1);
+           }
+            
+           // Close and reset device if requested ... 
+           at86rf215_close(&dev_tx, 1);  // Reset dev 1, no reset 0 ...
+           
+           m_radioInitialized = false;
         }
-        
-        // Close and reset device if requested ... 
-        at86rf215_close(&dev_tx, 1);  // Reset dev 1, no reset 0 ...
     }
     
     // SocFPGA init - initialize FPGA part [private]
@@ -463,7 +471,7 @@ namespace gr {
 
         int GPIO_VAL = 0;
         int TX_CONTROL = 0;
-        
+                
         // -- Parse sample rate --
         switch(m_SampleRate){
             case 4000000:
