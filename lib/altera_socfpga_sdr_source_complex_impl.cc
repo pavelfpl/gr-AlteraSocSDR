@@ -118,7 +118,7 @@ namespace gr {
     bool altera_socfpga_sdr_source_complex_impl::m_exit_requested;
 
     altera_socfpga_sdr_source_complex::sptr
-    altera_socfpga_sdr_source_complex::make(const std::string &DeviceName, unsigned long Frequency, int SampleRate, int AnalogBw, const std::string DigitalBw, bool AgcEnable, int RxGain, unsigned int WordLength, bool ScaleFactor,int ScaleConstant,unsigned int BufferLength,size_t itemsize,bool swap_iq)
+    altera_socfpga_sdr_source_complex::make(const std::string &DeviceName, double Frequency, int SampleRate, int AnalogBw, const std::string DigitalBw, bool AgcEnable, int RxGain, unsigned int WordLength, bool ScaleFactor,int ScaleConstant,unsigned int BufferLength,size_t itemsize,bool swap_iq)
     {
       return gnuradio::get_initial_sptr
         (new altera_socfpga_sdr_source_complex_impl(DeviceName, Frequency, SampleRate, AnalogBw, DigitalBw, AgcEnable, RxGain, WordLength, ScaleFactor, ScaleConstant, BufferLength, itemsize, swap_iq));
@@ -128,7 +128,7 @@ namespace gr {
      * The private constructor ...
      * ---------------------------
      */
-    altera_socfpga_sdr_source_complex_impl::altera_socfpga_sdr_source_complex_impl(const std::string &DeviceName, unsigned long Frequency, int SampleRate, int AnalogBw, const std::string DigitalBw, bool AgcEnable, int RxGain, unsigned int WordLength, bool ScaleFactor, int ScaleConstant, unsigned int BufferLength, size_t itemsize, bool swap_iq)
+    altera_socfpga_sdr_source_complex_impl::altera_socfpga_sdr_source_complex_impl(const std::string &DeviceName, double Frequency, int SampleRate, int AnalogBw, const std::string DigitalBw, bool AgcEnable, int RxGain, unsigned int WordLength, bool ScaleFactor, int ScaleConstant, unsigned int BufferLength, size_t itemsize, bool swap_iq)
       : gr::sync_block("altera_socfpga_sdr_source_complex",
               gr::io_signature::make(0,0,0),	    	     // - gr::io_signature::make(<+MIN_IN+>, <+MAX_IN+>, sizeof(<+ITYPE+>)),
               gr::io_signature::make(1,1,itemsize)),         // - default is - sizeof(gr_complex) gr::io_signature::make(<+MIN_OUT+>, <+MAX_OUT+>, sizeof(<+OTYPE+>)))
@@ -171,6 +171,7 @@ namespace gr {
         
       m_exit_requested = false;
       m_GPIO_RESET = 0;
+      m_radioInitialized = false;
       
       // Init AT86RF215 device first ...
       if(at86rf215_rx_init() != CONST_AT86RF215_INIT_OK){
@@ -203,10 +204,10 @@ namespace gr {
          // Add some short to latch data from FPGA FW FIFOS ...
          boost::this_thread::sleep(boost::posix_time::milliseconds(10*CONST_SLEEP_INTERVAL_MILI_SECONDS)); 
          if(socfpga_side_init() == CONST_FPGA_FW_SIDE_INIT_OK){
-             m_exit_requested = false; 
+            m_exit_requested = false; 
          }else{
-             cout << "Module init error - FPGA FW side" <<endl;
-             m_exit_requested = true; 
+            cout << "Module init error - FPGA FW side" <<endl;
+            m_exit_requested = true; 
          }
       }
     }
@@ -416,11 +417,13 @@ namespace gr {
         // -- Set radio --
         if(m_Frequency < 2000e6){
            cout << "Applying configuration for sub-GHz ..." << endl;
-           at86rf215_setup_iq_radio_receive (&dev_rx, at86rf215_rf_channel_900mhz, freqOK ? m_Frequency : 433e6, &rx_control, 0, at86rf215_iq_clock_data_skew_1_906ns);  // e.g - 433e6
+           at86rf215_setup_iq_radio_receive (&dev_rx, at86rf215_rf_channel_900mhz, freqOK ? (uint64_t)m_Frequency : (uint64_t)433e6, &rx_control, 0, at86rf215_iq_clock_data_skew_1_906ns);   // e.g - 433e6
         }else{
            cout << "Applying configuration for 2.4GHz ..." << endl;
-           at86rf215_setup_iq_radio_receive (&dev_rx, at86rf215_rf_channel_2400mhz, freqOK ? m_Frequency : 2400e6, &rx_control, 0, at86rf215_iq_clock_data_skew_1_906ns); // e.g - 2400e6
+           at86rf215_setup_iq_radio_receive (&dev_rx, at86rf215_rf_channel_2400mhz, freqOK ? (uint64_t)m_Frequency : (uint64_t)2400e6, &rx_control, 0, at86rf215_iq_clock_data_skew_1_906ns); // e.g - 2400e6
         }
+        
+         m_radioInitialized = true;
         
         // Return success status ...
         return CONST_AT86RF215_INIT_OK; 
@@ -433,14 +436,19 @@ namespace gr {
         
         at86rf215_irq_st irq = {0};
         
-        // Print status of the device at the end ...
-        if(showStatus){
-           at86rf215_get_iq_sync_status(&dev_rx);
-           at86rf215_get_irqs(&dev_rx, &irq, 1);
-        }
+        // Check initialization status ...
+        if(m_radioInitialized){
+          // Print status of the device at the end ...
+          if(showStatus){
+             at86rf215_get_iq_sync_status(&dev_rx);
+             at86rf215_get_irqs(&dev_rx, &irq, 1);
+          }
         
-        // Close and reset device if requested ... 
-        at86rf215_close(&dev_rx, 1);  // Reset dev 1, no reset 0 ...
+          // Close and reset device if requested ... 
+          at86rf215_close(&dev_rx, 1);  // Reset dev 1, no reset 0 ...
+          
+          m_radioInitialized = false;
+        }
     }
     
     
@@ -538,7 +546,9 @@ namespace gr {
         
            string c_int = to_string(m_GPIO_RESET); 
            write(valuefd, c_int.c_str(), c_int.size());
-           close(valuefd);  
+           close(valuefd);
+           
+           m_GPIO_RESET = 0;
         }
     }
     

@@ -36,13 +36,14 @@ namespace gr {
        static bool m_exit_requested;
        // AT86RF215 parameters
        std::string m_DeviceName;
-       unsigned long m_Frequency;
+       double m_Frequency;
        int m_SampleRate;
        int m_AnalogBw;
        std::string m_DigitalBw;
        bool m_AgcEnable;
        int m_RxGain;
        int m_GPIO_RESET;
+       bool m_radioInitialized;
        // Word length & scale factor etc.  
        unsigned int m_WordLength;
        bool m_ScaleFactor;
@@ -67,7 +68,7 @@ namespace gr {
        void at86rf215_rx_deinit(bool showStatus);
        void socfpga_side_deinit();
     public:
-      altera_socfpga_sdr_source_complex_impl(const std::string &DeviceName, unsigned long Frequency, int SampleRate, int AnalogBw, const std::string DigitalBw, bool AgcEnable, int RxGain, unsigned int WordLength, bool ScaleFactor,int ScaleConstant,unsigned int BufferLength,size_t itemsize, bool swap_iq);
+      altera_socfpga_sdr_source_complex_impl(const std::string &DeviceName, double Frequency, int SampleRate, int AnalogBw, const std::string DigitalBw, bool AgcEnable, int RxGain, unsigned int WordLength, bool ScaleFactor,int ScaleConstant,unsigned int BufferLength,size_t itemsize, bool swap_iq);
       ~altera_socfpga_sdr_source_complex_impl();
 
       void altera_msgdma_sdr_source_wait( /* altera_socfpga_sdr_source_complex *obj*/);  // virtual reimplement ...

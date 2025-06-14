@@ -21,7 +21,7 @@
     <name>Frequency</name>
     <key>Frequency</key>
     <value>2400000000</value>
-    <type>int</type>
+    <type>real</type>
   </param>
   <param>
     <name>Sample Rate</name>
@@ -112,7 +112,7 @@
   <param>
     <name>Scale Constant</name>
     <key>ScaleConstant</key>
-    <value>8192</value>
+    <value>4096</value>
     <type>int</type>
   </param>
   <param>
